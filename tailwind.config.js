@@ -14,7 +14,7 @@ module.exports = {
         background: "#020226",
       },
       backgroundImage: {
-        "overlay-pattern": "url('../assets/black-orchid.png')",
+        "overlay-pattern": "url('../public/icons/black-orchid.png')",
         "gradient-radial":
           "radial-gradient(circle at top, hsl(287, 80%, 15%) 20%, hsl(287, 30%, 0%))",
       },

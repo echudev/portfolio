@@ -1,8 +1,8 @@
 "use client";
 import { useGetIconTransform } from "../hooks/useGetIconTransform";
-import BkgIcons from "../components/BkgIcons";
-import Title from "../components/Title";
-import SectionProjects from "../components/SectionProjects";
+import BkgIcons from "./components/BkgIcons";
+import Title from "./components/Title";
+import SectionProjects from "./components/ProjectsSection";
 
 function HomePage() {
   const { iconTransformX, iconTransformY, handleMousePosition } =

@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-const Title = () => {
+const Projects = () => {
   return (
     <div className="max-w-[1000px] w-full min-h-[200px] z-50 pointer-events-none font-mono rounded-2xl text-white backdrop-blur-sm p-4 shadow-2xl">
       <Image src="" alt="project-icon" />
@@ -21,4 +21,4 @@ const Title = () => {
   );
 };
 
-export default Title;
+export default Projects;
