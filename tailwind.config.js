@@ -8,15 +8,15 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        iconBkg: "rgba(146, 146, 212, 0.25)",
-        navbarBkg: "rgba(223, 223, 255, 0.05)",
-        borderColor: "rgba(223, 223, 255, 0.10)",
-        background: "#020226",
+        Coalmine: "#25052e", // purple
+        MangoTango: "#ff8448", // orange
+        PeachVelour: "#ffb388", // orange light gray
+        SugarGlaze: "#ffefe0", // orange white
+        Archeology: "#6e665f", // orange gray
       },
       backgroundImage: {
-        "overlay-pattern": "url('../public/icons/black-orchid.png')",
         "gradient-radial":
-          "radial-gradient(circle at top, hsl(287, 80%, 15%) 20%, hsl(287, 30%, 0%))",
+          "radial-gradient(circle at top, hsl(287, 80%, 10%) 20%, hsl(287, 30%, 0%))",
       },
     },
   },

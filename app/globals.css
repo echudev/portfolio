@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 body {
-  color: #a6b3b8;
-  background-color: hsl(287, 50%, 10%);
+  color: #ffefe0;
+  background-color: hsl(287, 30%, 0%);
+  background-image: radial-gradient(circle at top, hsl(287, 80%, 10%) 20%, hsl(287, 30%, 0%));
+  background-repeat: no-repeat;
+  min-height: 100vh;
 }
