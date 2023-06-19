@@ -11,8 +11,10 @@ module.exports = {
         Coalmine: "#25052e", // purple
         MangoTango: "#ff8448", // orange
         PeachVelour: "#ffb388", // orange light gray
-        SugarGlaze: "#ffefe0", // orange white
-        Archeology: "#6e665f", // orange gray
+        Doctor: "#f8f8f8", //  white
+        Argent: "#888888", //  lighter gray
+        Excalibur: "#666666", // light gray
+        Onyx: "#444444", // dark gray
       },
       backgroundImage: {
         "gradient-radial":

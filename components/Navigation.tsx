@@ -7,9 +7,9 @@ interface NavLink {
   href: string;
 }
 const navLinks: NavLink[] = [
-  { name: "inicio", href: "/" },
-  { name: "proyectos", href: "/projects" },
-  { name: "recursos", href: "/resources" },
+  { name: "Inicio", href: "/" },
+  { name: "Proyectos", href: "/projects" },
+  { name: "Recursos", href: "/resources" },
 ];
 
 interface Styles {
@@ -18,15 +18,16 @@ interface Styles {
 }
 const styles: Styles = {
   active:
-    "text-SugarGlaze bg-gray-600 bg-opacity-30 py-2 px-3 rounded-lg transition",
-  noActive: "text-Archeology bg-transparent py-2 px-3 transition",
+    "relative text-Doctor hover:bg-Argent hover:bg-opacity-20 py-2 px-3 rounded-lg transition after:border-b-2 after:absolute after:h-full after:w-full after:-translate-x-[calc(100%-12px)] after:border-Doctor after:transition",
+  noActive:
+    "text-Argent hover:text-Doctor hover:bg-Argent hover:bg-opacity-20 py-2 px-3 rounded-lg transition after:border-b-2 after:absolute after:h-full after:w-0 after:-translate-x-[calc(100%-12px)] after:border-Doctor after:transition",
 };
 
 const Navigation = () => {
   const pathname = usePathname();
 
   return (
-    <div className="flex flex-row w-full justify-center gap-6 p-4 uppercase select-none">
+    <div className="flex flex-row w-full justify-center gap-6 p-2 select-none border-b-[0.5px] border-Argent border-opacity-40">
       {navLinks.map((link, i) => {
         let isActive: boolean;
 
