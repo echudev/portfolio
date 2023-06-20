@@ -1,34 +1,55 @@
 "use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useState } from "react";
+import { useRef } from "react";
 
 interface NavLink {
   name: string;
   href: string;
-  width: number;
+  style: string;
+  activeStyle: string;
 }
 const navLinks: NavLink[] = [
-  { name: "Inicio", href: "/", width: 80 },
-  { name: "Proyectos", href: "/projects", width: 110 },
-  { name: "Recursos", href: "/resources", width: 100 },
+  {
+    name: "Inicio",
+    href: "/",
+    style:
+      "relative text-center inline-block z-10 w-[80px] leading-10 hover:text-Doctor transition",
+    activeStyle: `text-Doctor relative text-center inline-block z-10 w-[80px] leading-10 hover:text-Doctor transition pb-3 border-b-2 border-Doctor `,
+  },
+  {
+    name: "Proyectos",
+    href: "/projects",
+    style:
+      "relative text-center inline-block z-10 w-[110px] leading-10 hover:text-Doctor transition",
+    activeStyle: `text-Doctor relative text-center inline-block z-10 w-[110px] leading-10 hover:text-Doctor transition pb-3 border-b-2 border-Doctor `,
+  },
+  {
+    name: "Recursos",
+    href: "/resources",
+    style:
+      "relative text-center inline-block z-10 w-[100px] leading-10 hover:text-Doctor transition",
+    activeStyle: `text-Doctor relative text-center inline-block z-10 w-[100px] leading-10 hover:text-Doctor transition pb-3 border-b-2 border-Doctor `,
+  },
 ];
 
 const Navigation = () => {
   const pathname = usePathname();
-  const [hoverWidth, setHoverWidth] = useState<Number>(0);
-  const [hoverLeft, setHoverLeft] = useState<Number>(0);
-  const [hoverBgColor, setHoverBgColor] = useState<String>("Argent");
+  const hoverBkg = useRef<HTMLDivElement>(null);
 
   function handleMouseEnter(event: React.MouseEvent<HTMLAnchorElement>) {
     let targetElement = event.target as HTMLAnchorElement;
     let { offsetLeft, offsetWidth } = targetElement;
-    setHoverWidth(offsetWidth);
-    setHoverLeft(offsetLeft);
-    setHoverBgColor("Argent");
+    if (hoverBkg.current) {
+      hoverBkg.current.style.left = `${offsetLeft}px`;
+      hoverBkg.current.style.width = `${offsetWidth}px`;
+      hoverBkg.current.style.backgroundColor = "rgba(68, 68, 68, 0.5)";
+    }
   }
   function handleMouseLeave() {
-    setHoverBgColor("transparent");
+    if (hoverBkg.current) {
+      hoverBkg.current.style.backgroundColor = "transparent";
+    }
   }
 
   return (
@@ -48,18 +69,15 @@ const Navigation = () => {
             href={link.href}
             onMouseEnter={(e) => handleMouseEnter(e)}
             onMouseLeave={handleMouseLeave}
-            className={
-              isActive
-                ? `text-Doctor relative text-center inline-block z-10 w-[${link.width}px] leading-10 hover:text-Doctor transition pb-3 border-b-2 border-Doctor`
-                : `relative text-center inline-block z-10 w-[${link.width}px] leading-10 hover:text-Doctor transition`
-            }
+            className={isActive ? link.activeStyle : link.style}
           >
             {link.name}
           </Link>
         );
       })}
       <div
-        className={`absolute z-0 top-0 left-[${hoverLeft}px] h-full rounded-md transistion bg-${hoverBgColor} bg-opacity-40 w-[${hoverWidth}px] transition-all`}
+        ref={hoverBkg}
+        className={`absolute z-0 top-0 h-full rounded-md transistion bg-opacity-40 transition-all`}
       ></div>
     </nav>
   );
