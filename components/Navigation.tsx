@@ -1,33 +1,38 @@
 "use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useState } from "react";
 
 interface NavLink {
   name: string;
   href: string;
+  width: number;
 }
 const navLinks: NavLink[] = [
-  { name: "Inicio", href: "/" },
-  { name: "Proyectos", href: "/projects" },
-  { name: "Recursos", href: "/resources" },
+  { name: "Inicio", href: "/", width: 80 },
+  { name: "Proyectos", href: "/projects", width: 110 },
+  { name: "Recursos", href: "/resources", width: 100 },
 ];
-
-interface Styles {
-  active: string;
-  noActive: string;
-}
-const styles: Styles = {
-  active:
-    "relative text-Doctor hover:bg-Argent hover:bg-opacity-20 py-2 px-3 rounded-lg transition after:border-b-2 after:absolute after:h-full after:w-full after:-translate-x-[calc(100%-12px)] after:border-Doctor after:transition",
-  noActive:
-    "text-Argent hover:text-Doctor hover:bg-Argent hover:bg-opacity-20 py-2 px-3 rounded-lg transition after:border-b-2 after:absolute after:h-full after:w-0 after:-translate-x-[calc(100%-12px)] after:border-Doctor after:transition",
-};
 
 const Navigation = () => {
   const pathname = usePathname();
+  const [hoverWidth, setHoverWidth] = useState<Number>(0);
+  const [hoverLeft, setHoverLeft] = useState<Number>(0);
+  const [hoverBgColor, setHoverBgColor] = useState<String>("Argent");
+
+  function handleMouseEnter(event: React.MouseEvent<HTMLAnchorElement>) {
+    let targetElement = event.target as HTMLAnchorElement;
+    let { offsetLeft, offsetWidth } = targetElement;
+    setHoverWidth(offsetWidth);
+    setHoverLeft(offsetLeft);
+    setHoverBgColor("Argent");
+  }
+  function handleMouseLeave() {
+    setHoverBgColor("transparent");
+  }
 
   return (
-    <div className="flex flex-row w-full justify-center gap-6 p-2 select-none border-b-[0.5px] border-Argent border-opacity-40">
+    <nav className={`relative mx-auto mt-5 w-[290px] h-10 text-Argent`}>
       {navLinks.map((link, i) => {
         let isActive: boolean;
 
@@ -39,15 +44,24 @@ const Navigation = () => {
 
         return (
           <Link
-            className={isActive ? styles.active : styles.noActive}
             key={i}
             href={link.href}
+            onMouseEnter={(e) => handleMouseEnter(e)}
+            onMouseLeave={handleMouseLeave}
+            className={
+              isActive
+                ? `text-Doctor relative text-center inline-block z-10 w-[${link.width}px] leading-10 hover:text-Doctor transition pb-3 border-b-2 border-Doctor`
+                : `relative text-center inline-block z-10 w-[${link.width}px] leading-10 hover:text-Doctor transition`
+            }
           >
             {link.name}
           </Link>
         );
       })}
-    </div>
+      <div
+        className={`absolute z-0 top-0 left-[${hoverLeft}px] h-full rounded-md transistion bg-${hoverBgColor} bg-opacity-40 w-[${hoverWidth}px] transition-all`}
+      ></div>
+    </nav>
   );
 };
 

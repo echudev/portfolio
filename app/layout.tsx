@@ -1,6 +1,7 @@
 import "./globals.css";
 import { Inter } from "next/font/google";
 import Navigation from "../components/Navigation";
+import Divider from "@/components/Divider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,6 +19,7 @@ export default function RootLayout({
     <html lang="es">
       <body className={inter.className}>
         <Navigation />
+        <Divider />
         {children}
       </body>
     </html>
