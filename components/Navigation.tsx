@@ -53,7 +53,9 @@ const Navigation = () => {
   }
 
   return (
-    <nav className={`relative mx-auto mt-5 w-[290px] h-10 text-Argent`}>
+    <nav
+      className={`relative mx-auto mt-5 w-[290px] h-10 text-Argent select-none`}
+    >
       {navLinks.map((link, i) => {
         let isActive: boolean;
 
