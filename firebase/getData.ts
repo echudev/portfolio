@@ -1,16 +1,6 @@
 import { db } from "./config";
 import { collection, getDocs, QueryDocumentSnapshot  } from "firebase/firestore/lite";
- 
-interface ProjectData {
-    id: string,
-    name: string,
-    tags: string[],
-    img: string[],
-    gif: string,
-    short_desc: string,
-    long_desc: string,
-    skills: string[]
-}
+import { ProjectData } from "@/types";
 
 export default async function GetDouments() {
     let proyectsCollectionRef = collection(db, '/proyectos/');

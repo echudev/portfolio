@@ -1,25 +1,19 @@
 import GetDouments from "../../firebase/getData";
+import Card from "@/components/Card";
 
 async function ProjectsPage() {
   const { projectsCollection } = await GetDouments();
 
   return (
-    <div>
-      <p>mira mis proyectos</p>
+    <main className="flex flex-wrap justify-center max-w-6xl transition-all">
       {projectsCollection ? (
         projectsCollection.map((project) => (
-          <div key={project.id}>
-            <p>{project.name}</p>
-            <p>{project.short_desc}</p>
-            {project.skills.map((skill, i) => (
-              <p key={i}>{skill}</p>
-            ))}
-          </div>
+          <Card key={project.id} data={project} />
         ))
       ) : (
-        <p>nada hay</p>
+        <div>Cargando</div>
       )}
-    </div>
+    </main>
   );
 }
 

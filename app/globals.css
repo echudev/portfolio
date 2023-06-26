@@ -4,6 +4,9 @@
 
 @layer utilities {
   html {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     color: #f8f8f8;
     background-color: hsl(287, 30%, 0%);
     background-image: radial-gradient(circle at top, hsl(287, 80%, 10%) 20%, hsl(287, 30%, 0%));

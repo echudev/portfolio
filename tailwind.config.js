@@ -8,13 +8,14 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        Coalmine: "#25052e", // purple
-        MangoTango: "#ff8448", // orange
-        PeachVelour: "#ffb388", // orange light gray
-        Doctor: "#f8f8f8", //  white
-        Argent: "#888888", //  lighter gray
-        Excalibur: "#666666", // light gray
-        Onyx: "#444444", // dark gray
+        Coalmine: "#25052e",
+        MangoTango: "#ff8448",
+        PeachVelour: "#ffb388",
+        Doctor: "#f8f8f8", // texto principal
+        Silver: "#bfbfbf", // texto secundario
+        Argent: "#888888", //
+        Excalibur: "#666666",
+        Onyx: "#444444", //
       },
       backgroundImage: {
         "gradient-radial":
