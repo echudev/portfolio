@@ -9,6 +9,7 @@ module.exports = {
     extend: {
       colors: {
         Coalmine: "#25052e",
+        ElegantPurple: "#4e1861",
         MangoTango: "#ff8448",
         PeachVelour: "#ffb388",
         Doctor: "#f8f8f8", // texto principal
