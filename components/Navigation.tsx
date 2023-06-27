@@ -78,6 +78,7 @@ const Navigation = () => {
         );
       })}
       <div
+        aria-label="hover-background"
         ref={hoverBkg}
         className={`absolute z-0 top-0 h-full rounded-md transistion bg-opacity-40 transition-all`}
       ></div>
