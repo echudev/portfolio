@@ -27,7 +27,7 @@ const Navigation = () => {
       <LayoutGroup>
         <div
           aria-label="link container"
-          className="flex justify-center h-10 text-gray-400 select-none"
+          className="flex justify-center h-10 text-neutral-400 select-none"
         >
           {navLinks.map((link, i) => {
             let isActive: boolean;

@@ -30,7 +30,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="es" className={`${ubuntu.variable}`}>
-      <body className="antialiased font-ubuntu text-gray-200">
+      <body className="antialiased font-ubuntu text-neutral-200">
         <Navigation />
         <main
           style={{ height: "calc(100vh - 60px)" }}
