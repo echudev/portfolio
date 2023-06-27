@@ -5,7 +5,7 @@ import Navigation from "../components/Navigation";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "echudev",
+  title: "Ezequiel M.",
   description: "Portfolio from Echudev, web developer",
 };
 

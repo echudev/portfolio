@@ -15,21 +15,21 @@ const navLinks: NavLink[] = [
     href: "/",
     style:
       "relative text-center inline-block z-10 w-[80px] leading-10 hover:text-Doctor transition",
-    activeStyle: `text-Doctor relative text-center inline-block z-10 w-[80px] leading-10 hover:text-Doctor transition pb-2 border-b-2 border-Doctor `,
+    activeStyle: `text-Doctor relative text-center inline-block z-10 w-[80px] leading-10 hover:text-Doctor transition`,
   },
   {
     name: "Proyectos",
     href: "/projects",
     style:
       "relative text-center inline-block z-10 w-[110px] leading-10 hover:text-Doctor transition",
-    activeStyle: `text-Doctor relative text-center inline-block z-10 w-[110px] leading-10 hover:text-Doctor transition pb-2 border-b-2 border-Doctor `,
+    activeStyle: `text-Doctor relative text-center inline-block z-10 w-[110px] leading-10 hover:text-Doctor transition`,
   },
   {
     name: "Recursos",
     href: "/resources",
     style:
       "relative text-center inline-block z-10 w-[100px] leading-10 hover:text-Doctor transition",
-    activeStyle: `text-Doctor relative text-center inline-block z-10 w-[100px] leading-10 hover:text-Doctor transition pb-2 border-b-2 border-Doctor `,
+    activeStyle: `text-Doctor relative text-center inline-block z-10 w-[100px] leading-10 hover:text-Doctor transition `,
   },
 ];
 
@@ -37,7 +37,7 @@ const Navigation = () => {
   const pathname = usePathname();
   const hoverBkg = useRef<HTMLDivElement>(null);
 
-  function handleMouseEnter(event: React.MouseEvent<HTMLAnchorElement>) {
+  function handleMouseClick(event: React.MouseEvent<HTMLAnchorElement>) {
     let targetElement = event.target as HTMLAnchorElement;
     let { offsetLeft, offsetWidth } = targetElement;
     if (hoverBkg.current) {
@@ -46,14 +46,14 @@ const Navigation = () => {
       hoverBkg.current.style.backgroundColor = "rgba(68, 68, 68, 0.5)";
     }
   }
-  function handleMouseLeave() {
-    if (hoverBkg.current) {
-      hoverBkg.current.style.backgroundColor = "transparent";
-    }
-  }
+  // function handleMouseLeave() {
+  //   if (hoverBkg.current) {
+  //     hoverBkg.current.style.backgroundColor = "transparent";
+  //   }
+  // }
 
   return (
-    <nav className="w-screen mt-2 pb-2 z-50 border-b-[1px] border-Argent">
+    <nav className="w-screen mt-2 pb-2 z-50 border-b border-black">
       <div
         aria-label="navLinks container"
         className="relative mx-auto w-[290px] h-10 text-Argent select-none"
@@ -71,8 +71,7 @@ const Navigation = () => {
             <Link
               key={i}
               href={link.href}
-              onMouseEnter={(e) => handleMouseEnter(e)}
-              onMouseLeave={handleMouseLeave}
+              onClick={(e) => handleMouseClick(e)}
               className={isActive ? link.activeStyle : link.style}
             >
               {link.name}
