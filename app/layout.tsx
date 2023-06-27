@@ -1,8 +1,22 @@
 import "./globals.css";
-import { Inter } from "next/font/google";
 import Navigation from "../components/Navigation";
+import localFont from "next/font/local";
 
-const inter = Inter({ subsets: ["latin"] });
+const ubuntu = localFont({
+  src: [
+    {
+      path: "../public/font/Ubuntu-Bold.ttf",
+      weight: "700",
+      style: "normal",
+    },
+    {
+      path: "../public/font/Ubuntu-Regular.ttf",
+      weight: "400",
+      style: "normal",
+    },
+  ],
+  variable: "--font-ubuntu",
+});
 
 export const metadata = {
   title: "Ezequiel M.",
@@ -15,8 +29,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="es" className={inter.className}>
-      <body className="antialiased">
+    <html lang="es" className={`${ubuntu.variable}`}>
+      <body className="antialiased font-ubuntu">
         <Navigation />
         <main
           style={{ height: "calc(100vh - 60px)" }}

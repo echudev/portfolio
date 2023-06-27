@@ -18,6 +18,9 @@ module.exports = {
         Excalibur: "#666666",
         Onyx: "#444444", //
       },
+      fontFamily: {
+        ubuntu: "var(--font-ubuntu)",
+      },
       backgroundImage: {
         "gradient-radial":
           "radial-gradient(circle at top, hsl(287, 80%, 10%) 20%, hsl(287, 30%, 0%))",
