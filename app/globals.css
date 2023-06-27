@@ -4,12 +4,8 @@
 
 @layer utilities {
   html {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: #f8f8f8;
     background-color: hsl(287, 30%, 0%);
-    background-image: radial-gradient(circle at top, hsl(287,40%, 9%) 20%, hsl(287, 0%, 6%));
+    background-image: radial-gradient(circle at top, hsl(287,40%, 10%) 20%, hsl(287, 0%, 7%));
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;

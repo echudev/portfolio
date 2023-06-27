@@ -7,17 +7,6 @@ module.exports = {
   ],
   theme: {
     extend: {
-      colors: {
-        Coalmine: "#25052e",
-        Lavender: "#b863d7",
-        MangoTango: "#ff8448",
-        PeachVelour: "#ffb388",
-        Doctor: "#f8f8f8", // texto principal
-        Silver: "#bfbfbf", // texto secundario
-        Argent: "#888888", //
-        Excalibur: "#666666",
-        Onyx: "#444444", //
-      },
       fontFamily: {
         ubuntu: "var(--font-ubuntu)",
       },

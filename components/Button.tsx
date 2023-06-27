@@ -28,19 +28,19 @@ const Button = ({ text, link, icon, height, width }: ButtonProps) => {
       )}
       {link && !icon && (
         <Link href={link} target="_blank">
-          <div className="flex gap-2 border border-slate-800 rounded-md p-1 bg-slate-700 bg-opacity-40  text-xs text-Silver hover:brightness-125 font-bold transition-all">
+          <div className="flex gap-2 border border-slate-800 rounded-md p-1 bg-slate-700 bg-opacity-40  text-xs text-gray-300 hover:brightness-125 font-bold transition-all">
             <button>{text}</button>
           </div>
         </Link>
       )}
       {!link && icon && (
-        <div className="flex gap-2 border border-slate-800 rounded-md p-1 bg-slate-700 bg-opacity-40  text-xs text-Silver hover:brightness-125 font-bold transition-all">
+        <div className="flex gap-2 border border-slate-800 rounded-md p-1 bg-slate-700 bg-opacity-40  text-xs text-gray-300 hover:brightness-125 font-bold transition-all">
           <Image alt={text} src={icon} width={height} height={width} />
           <button>{text}</button>
         </div>
       )}
       {!link && !icon && (
-        <div className="flex gap-2 border border-slate-800 rounded-md p-1 bg-slate-700 bg-opacity-40  text-xs text-Silver hover:brightness-125 font-bold transition-all">
+        <div className="flex gap-2 border border-slate-800 rounded-md p-1 bg-slate-700 bg-opacity-40  text-xs text-gray-300 hover:brightness-125 font-bold transition-all">
           <button>{text}</button>
         </div>
       )}

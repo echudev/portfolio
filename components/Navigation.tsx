@@ -23,11 +23,11 @@ const Navigation = () => {
   const pathname = usePathname();
 
   return (
-    <nav className="w-screen mt-2 pb-2 z-10 border-b border-black">
+    <nav className="w-screen mt-2 pb-2 z-10 border-b border-white border-opacity-20">
       <LayoutGroup>
         <div
           aria-label="link container"
-          className="flex justify-center h-10 text-Argent select-none"
+          className="flex justify-center h-10 text-gray-400 select-none"
         >
           {navLinks.map((link, i) => {
             let isActive: boolean;
@@ -43,15 +43,15 @@ const Navigation = () => {
                 key={i}
                 href={link.href}
                 className={clsx(
-                  "relative text-center inline-block z-10 px-3 mx-1 leading-10 hover:text-Doctor",
-                  { "text-Doctor": isActive }
+                  "relative text-center inline-block z-10 px-3 mx-1 leading-10 hover:text-white transition-all",
+                  { "text-white": isActive }
                 )}
               >
                 {link.name}
 
                 {isActive ? (
                   <motion.div
-                    className="absolute inset-0 bg-gray-500 bg-opacity-30 rounded-md z-[-1]"
+                    className="absolute inset-0 bg-purple-400 bg-opacity-20 rounded-md z-[-1]"
                     layoutId="sidebar"
                     transition={{
                       type: "spring",
