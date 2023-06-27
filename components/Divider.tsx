@@ -9,8 +9,8 @@ interface Classes {
 }
 const classes: Classes = {
   full: "border-t-[1px] border-t-Argent border-opacity-50 w-full",
-  mid: "border-t-[1px] border-t-Argent border-opacity-50 w-[50%]",
-  short: "border-t-[1px] border-t-Argent border-opacity-50 w-28",
+  mid: "border-t-[1px] border-t-Argent border-opacity-50 w-[25%]",
+  short: "border-t-[1px] border-t-Argent border-opacity-50 w-[10%]",
 };
 
 const Divider = ({ size, text }: DividerProps) => {

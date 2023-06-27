@@ -5,15 +5,20 @@ async function ProjectsPage() {
   const { projectsCollection } = await GetDouments();
 
   return (
-    <main className="flex flex-wrap justify-center max-w-6xl transition-all">
-      {projectsCollection ? (
-        projectsCollection.map((project) => (
-          <Card key={project.id} data={project} />
-        ))
-      ) : (
-        <div>Cargando</div>
-      )}
-    </main>
+    <section className="max-w-6xl h-full overflow-y-auto lg:mt-5">
+      <div
+        aria-label="projects container"
+        className="flex flex-wrap justify-center"
+      >
+        {projectsCollection ? (
+          projectsCollection.map((project) => (
+            <Card key={project.id} data={project} />
+          ))
+        ) : (
+          <div>Loading</div>
+        )}
+      </div>
+    </section>
   );
 }
 

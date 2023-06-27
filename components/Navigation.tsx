@@ -15,21 +15,21 @@ const navLinks: NavLink[] = [
     href: "/",
     style:
       "relative text-center inline-block z-10 w-[80px] leading-10 hover:text-Doctor transition",
-    activeStyle: `text-Doctor relative text-center inline-block z-10 w-[80px] leading-10 hover:text-Doctor transition pb-3 border-b-2 border-Doctor `,
+    activeStyle: `text-Doctor relative text-center inline-block z-10 w-[80px] leading-10 hover:text-Doctor transition pb-2 border-b-2 border-Doctor `,
   },
   {
     name: "Proyectos",
     href: "/projects",
     style:
       "relative text-center inline-block z-10 w-[110px] leading-10 hover:text-Doctor transition",
-    activeStyle: `text-Doctor relative text-center inline-block z-10 w-[110px] leading-10 hover:text-Doctor transition pb-3 border-b-2 border-Doctor `,
+    activeStyle: `text-Doctor relative text-center inline-block z-10 w-[110px] leading-10 hover:text-Doctor transition pb-2 border-b-2 border-Doctor `,
   },
   {
     name: "Recursos",
     href: "/resources",
     style:
       "relative text-center inline-block z-10 w-[100px] leading-10 hover:text-Doctor transition",
-    activeStyle: `text-Doctor relative text-center inline-block z-10 w-[100px] leading-10 hover:text-Doctor transition pb-3 border-b-2 border-Doctor `,
+    activeStyle: `text-Doctor relative text-center inline-block z-10 w-[100px] leading-10 hover:text-Doctor transition pb-2 border-b-2 border-Doctor `,
   },
 ];
 
@@ -53,35 +53,38 @@ const Navigation = () => {
   }
 
   return (
-    <nav
-      className={`relative mx-auto mt-5 w-[290px] h-10 text-Argent select-none`}
-    >
-      {navLinks.map((link, i) => {
-        let isActive: boolean;
-
-        if (link.href === "/inicio") {
-          isActive = pathname.startsWith(link.href);
-        } else {
-          isActive = pathname === link.href;
-        }
-
-        return (
-          <Link
-            key={i}
-            href={link.href}
-            onMouseEnter={(e) => handleMouseEnter(e)}
-            onMouseLeave={handleMouseLeave}
-            className={isActive ? link.activeStyle : link.style}
-          >
-            {link.name}
-          </Link>
-        );
-      })}
+    <nav className="w-screen mt-2 pb-2 z-50 border-b-[1px] border-Argent">
       <div
-        aria-label="hover-background"
-        ref={hoverBkg}
-        className={`absolute z-0 top-0 h-full rounded-md transistion bg-opacity-40 transition-all`}
-      ></div>
+        aria-label="navLinks container"
+        className="relative mx-auto w-[290px] h-10 text-Argent select-none"
+      >
+        {navLinks.map((link, i) => {
+          let isActive: boolean;
+
+          if (link.href === "/inicio") {
+            isActive = pathname.startsWith(link.href);
+          } else {
+            isActive = pathname === link.href;
+          }
+
+          return (
+            <Link
+              key={i}
+              href={link.href}
+              onMouseEnter={(e) => handleMouseEnter(e)}
+              onMouseLeave={handleMouseLeave}
+              className={isActive ? link.activeStyle : link.style}
+            >
+              {link.name}
+            </Link>
+          );
+        })}
+        <div
+          aria-label="background hover effect"
+          ref={hoverBkg}
+          className={`absolute z-0 top-0 h-full rounded-md transistion bg-opacity-40 transition-all`}
+        ></div>
+      </div>
     </nav>
   );
 };

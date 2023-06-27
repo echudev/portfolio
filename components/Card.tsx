@@ -30,8 +30,8 @@ const Card = ({ data }: CardProps) => {
       <p className="text-sm text-Silver m-1">{data.description}</p>
 
       <div
-        aria-label="skill-icons-container"
-        className="flex flex-row items-center gap-3 mx-1 mt-4 mb-1"
+        aria-label="skills icon container"
+        className="flex flex-row items-center gap-3 mx-1 mt-2 mb-4"
       >
         {data.tags.map((skill, i) => (
           <div key={i} className="group relative">
