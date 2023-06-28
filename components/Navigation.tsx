@@ -30,13 +30,7 @@ const Navigation = () => {
           className="flex justify-center h-10 text-neutral-400 select-none"
         >
           {navLinks.map((link, i) => {
-            let isActive: boolean;
-
-            if (link.href === "/inicio") {
-              isActive = pathname.startsWith(link.href);
-            } else {
-              isActive = pathname === link.href;
-            }
+            let isActive = pathname === link.href;
 
             return (
               <Link
@@ -51,7 +45,7 @@ const Navigation = () => {
 
                 {isActive ? (
                   <motion.div
-                    className="absolute inset-0 bg-purple-400 bg-opacity-20 rounded-md z-[-1]"
+                    className="absolute inset-0 rounded-md border border-neutral-400 bg-neutral-400 bg-opacity-5 z-[-1]"
                     layoutId="sidebar"
                     transition={{
                       type: "spring",
