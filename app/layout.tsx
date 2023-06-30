@@ -30,9 +30,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="es" className={`${ubuntu.variable}`}>
-      <body className="antialiased font-ubuntu text-neutral-200 max-w-4xl h-screen flex flex-col mx-auto">
+      <body className="antialiased font-ubuntu text-neutral-300 h-screen flex flex-col items-center">
         <Navigation />
-        <main className="overflow-y-auto lg:mt-5">{children}</main>
+        <main className="w-full overflow-y-auto">{children}</main>
       </body>
     </html>
   );
