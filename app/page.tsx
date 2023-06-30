@@ -1,6 +1,6 @@
 function HomePage() {
   return (
-    <section className="max-w-6xl h-full overflow-y-auto lg:mt-5">
+    <section>
       <h1 className="text-3xl">Ezequiel M.</h1>
       <p>
         Hola! Soy Ezequiel, programador fullstack orientado al desarrollo de

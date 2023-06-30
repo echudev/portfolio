@@ -23,7 +23,7 @@ const Navigation = () => {
   const pathname = usePathname();
 
   return (
-    <nav className="w-screen mt-2 pb-2 z-10 border-b border-white border-opacity-20">
+    <nav className="w-full mt-2 z-10">
       <LayoutGroup>
         <div
           aria-label="link container"
@@ -58,6 +58,7 @@ const Navigation = () => {
             );
           })}
         </div>
+        <div className="w-full h-[1px] mt-3 bg-gradient-to-r from-transparent from-0% via-neutral-500 via-50% to-transparent-500 to-100%"></div>
       </LayoutGroup>
     </nav>
   );

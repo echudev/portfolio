@@ -12,10 +12,13 @@ const GHicon: string =
 
 const Card = ({ data }: CardProps) => {
   return (
-    <div key={data.id} className="rounded-lg m-3 max-w-xs p-1">
+    <div
+      key={data.id}
+      className="rounded-lg m-3 flex flex-1 flex-col max-w-xs min-w-[270px] p-1"
+    >
       <Link href={data.link.app} target="_blank">
         <Image
-          className="rounded-sm cursor-pointer hover:translate-x-[6px] hover:-translate-y-[6px] hover:shadow-3d  transition-all"
+          className="rounded-sm cursor-pointer hover:translate-x-[6px] hover:-translate-y-[6px] hover:shadow-3d transition-all"
           alt={data.name}
           src={data.cover}
           width={1280}

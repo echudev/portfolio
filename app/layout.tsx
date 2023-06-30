@@ -30,14 +30,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="es" className={`${ubuntu.variable}`}>
-      <body className="antialiased font-ubuntu text-neutral-200">
+      <body className="antialiased font-ubuntu text-neutral-200 max-w-4xl h-screen flex flex-col mx-auto">
         <Navigation />
-        <main
-          style={{ height: "calc(100vh - 60px)" }}
-          className="flex flex-col items-center"
-        >
-          {children}
-        </main>
+        <main className="overflow-y-auto lg:mt-5">{children}</main>
       </body>
     </html>
   );
