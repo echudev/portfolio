@@ -15,7 +15,7 @@ function HomePage() {
       <h1 className="text-3xl my-5">¡Hola! Soy Ezequiel M.</h1>
       <span className="page-break-after: always;">
         {
-          "Soy un desarrollador Frontend con más de 2 años de experiencia creando aplicaciones web utilizando tecnologías como"
+          "Actualmente me desempeño como desarrollador Frontend. Llevo más de 2 años de experiencia creando aplicaciones web utilizando tecnologías como"
         }
         <Badge href={"https://www.google.com"} src={react} text={"React"} />
         {","}
@@ -29,15 +29,13 @@ function HomePage() {
       <br />
       <br />
       <span>
-        {
-          "Para el diseño y estilados, tengo experiencia trabajando con varias bibliotecas"
-        }
+        {"Para el diseño y estilados, puedo manejar varias bibliotecas"}
         <Badge href={""} src={css} text={"CSS"} />
         {"como"}
         <Badge href={""} src={twnd} text={"Tailwind"} />
         {"y"}
         <Badge href={""} src={mui} text={"Material UI"} />
-        {"entre otras, para crear interfaces atractivas y funcionales."}
+        {"entre otras, creando interfaces atractivas y funcionales."}
       </span>
       <br />
       <br />
@@ -47,7 +45,7 @@ function HomePage() {
         }
         <Badge href={""} src={firebase} text={"Firebase"} />
         {
-          ", pudiendo adaptarme a nuevas tecnologías si el proyecto lo requiere, a fin de lograr un rendimento óptimo."
+          ", pudiendo adaptarme a nuevas tecnologías si el proyecto lo requiere a fin de lograr un rendimento óptimo."
         }
       </span>
       <br />
