@@ -12,10 +12,10 @@ import Link from "next/link";
 function HomePage() {
   return (
     <section className="p-5 w-full">
-      <h1 className="text-3xl my-5">¡Hola! Soy Ezequiel M.</h1>
+      <h1 className="text-3xl my-5">¡Hola! Soy Ezequiel 🫡</h1>
       <span className="page-break-after: always;">
         {
-          "Actualmente me desempeño como desarrollador Frontend. Llevo más de 2 años de experiencia creando aplicaciones web utilizando tecnologías como"
+          "Soy un desarrollador Frontend con más de 2 años de experiencia en la creación de aplicaciones web utilizando tecnologías como"
         }
         <Badge href={"https://www.google.com"} src={react} text={"React"} />
         {","}
