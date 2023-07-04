@@ -5,7 +5,7 @@
 @layer utilities {
   html {
     background-color: hsl(287, 30%, 0%);
-    background-image: radial-gradient(circle at top, hsl(287,40%, 10%) 20%, hsl(287, 0%, 7%));
+    background-image: radial-gradient(circle at top, hsl(287,40%, 7%) 20%, hsl(287, 0%, 3%));
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;

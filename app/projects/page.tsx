@@ -1,5 +1,5 @@
 import GetDouments from "../../firebase/getData";
-import Card from "@/components/Card";
+import Card from "@/app/components/Card";
 
 async function ProjectsPage() {
   const { projectsCollection } = await GetDouments();

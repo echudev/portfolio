@@ -1,3 +1,4 @@
+// import fs from 'fs';
 import { db } from "./config";
 import { collection, getDocs, QueryDocumentSnapshot  } from "firebase/firestore/lite";
 import { ProjectData } from "@/types";
@@ -23,6 +24,15 @@ export default async function GetDouments() {
         };
         projectsCollection.push(newProject);
     });
+
+    // const json = JSON.stringify(projectsCollection);
+    // fs.writeFile('data.json', json, 'utf8', (err) => {
+    //     if (err) {
+    //       console.error(err);
+    //       return;
+    //     }
+    //     console.log('Archivo guardado correctamente.');
+    //   });
 
 
     return { projectsCollection, error };

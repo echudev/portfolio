@@ -1,6 +1,8 @@
 import "./globals.css";
-import Navigation from "../components/Navigation";
+import Navigation from "./components/Navigation";
 import localFont from "next/font/local";
+import { Suspense } from "react";
+import Loading from "./loading";
 
 const ubuntu = localFont({
   src: [
@@ -30,9 +32,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="es" className={`${ubuntu.variable}`}>
-      <body className="antialiased font-ubuntu text-neutral-300 h-screen flex flex-col items-center">
+      <body className="antialiased font-ubuntu text-neutral-300 h-screen max-w-2xl mx-auto flex flex-col items-center backdrop-blur-md bg-opacity-5 bg-neutral-400 shadow-xl rounded-xl">
         <Navigation />
-        <main className="w-full overflow-y-auto">{children}</main>
+        <Suspense fallback={<Loading />}>
+          <main className="w-full overflow-y-auto">{children}</main>
+        </Suspense>
       </body>
     </html>
   );

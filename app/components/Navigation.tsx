@@ -14,8 +14,8 @@ const navLinks = [
     href: "/projects",
   },
   {
-    name: "Recursos",
-    href: "/resources",
+    name: "Contacto",
+    href: "/contact",
   },
 ];
 
@@ -23,7 +23,7 @@ const Navigation = () => {
   const pathname = usePathname();
 
   return (
-    <nav className="w-full mt-2 z-10">
+    <nav className="w-full max-w-2xl mt-2 z-10">
       <LayoutGroup>
         <div
           aria-label="link container"
