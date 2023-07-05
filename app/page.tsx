@@ -12,7 +12,7 @@ import Link from "next/link";
 function HomePage() {
   return (
     <section className="p-5 w-full">
-      <h1 className="text-3xl my-5">¡Hola! Soy Ezequiel 🫡</h1>
+      <h1 className="text-3xl my-5 text-neutral-100">¡Hola! Soy Ezequiel 🫡</h1>
       <span className="page-break-after: always;">
         {
           "Soy un desarrollador Frontend con más de 2 años de experiencia en la creación de aplicaciones web utilizando tecnologías como"
