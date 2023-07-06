@@ -6,11 +6,11 @@ async function ProjectsPage() {
 
   return (
     <section className="p-3 max-w-2xl mx-auto">
-      <div className="flex flex-wrap justify-center">
+      <article className="flex flex-wrap justify-center">
         {projectsCollection.map((project) => (
           <Card key={project.id} data={project} />
         ))}
-      </div>
+      </article>
     </section>
   );
 }

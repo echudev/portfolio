@@ -2,7 +2,7 @@ import "./globals.css";
 import Navigation from "./components/Navigation";
 import localFont from "next/font/local";
 import { Suspense } from "react";
-import Loading from "./loading";
+import Loader from "./loading";
 
 const ubuntu = localFont({
   src: [
@@ -32,9 +32,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="es" className={`${ubuntu.variable}`}>
-      <body className="antialiased font-ubuntu text-neutral-300 h-screen max-w-2xl mx-auto flex flex-col items-center backdrop-blur-md bg-opacity-5 bg-neutral-400 shadow-xl rounded-xl">
+      <body className="antialiased font-ubuntu text-neutral-300 h-screen max-w-2xl mx-auto flex flex-col items-center backdrop-blur-xl bg-opacity-20 border border-neutral-800 bg-neutral-600 shadow-xl rounded-xl">
         <Navigation />
-        <Suspense fallback={<Loading />}>
+        <Suspense fallback={<Loader />}>
           <main className="w-full overflow-y-auto">{children}</main>
         </Suspense>
       </body>
