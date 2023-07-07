@@ -1,20 +1,18 @@
 import Image from "next/image";
 import Link from "next/link";
-import { ProjectData } from "@/types";
+import { ProjectData } from "@/lib/getProjects";
 import Button from "./Button";
+import GHicon from "../../public/icons/github.png";
 
 interface CardProps {
   data: ProjectData;
 }
 
-const GHicon: string =
-  "https://res.cloudinary.com/ddeveuwdl/image/upload/v1687764202/logos100px/github_divnvw.png";
-
 const Card = ({ data }: CardProps) => {
   return (
     <div
       key={data.id}
-      className="rounded-lg m-3 flex flex-1 flex-col max-w-xs min-w-[270px] p-1"
+      className="rounded-lg m-3 flex flex-1 flex-col max-w-xs min-w-[270px] p-1 shadow"
     >
       <Link href={data.link.app} target="_blank">
         <Image

@@ -6,14 +6,17 @@ import clsx from "clsx";
 
 const navLinks = [
   {
+    id: 0,
     name: "Inicio",
     href: "/",
   },
   {
+    id: 1,
     name: "Proyectos",
     href: "/projects",
   },
   {
+    id: 2,
     name: "Contacto",
     href: "/contact",
   },
@@ -27,7 +30,7 @@ const Navigation = () => {
       <LayoutGroup>
         <div
           aria-label="link container"
-          className="flex justify-center h-10 text-neutral-400 select-none"
+          className="flex h-10 text-neutral-400 mx-5 select-none border-b border-neutral-700 shadow-md"
         >
           {navLinks.map((link, i) => {
             let isActive = pathname === link.href;
@@ -37,15 +40,15 @@ const Navigation = () => {
                 key={i}
                 href={link.href}
                 className={clsx(
-                  "relative text-center inline-block z-10 px-3 mx-1 leading-10 hover:text-white transition-all",
-                  { "text-white": isActive }
+                  "relative text-center inline-block z-10 px-2 leading-10 hover:text-green-500 transition-all",
+                  { "text-green-500": isActive }
                 )}
               >
                 {link.name}
 
                 {isActive ? (
                   <motion.div
-                    className="absolute inset-0 rounded-md border border-neutral-400 bg-neutral-400 bg-opacity-5 z-[-1]"
+                    className="absolute inset-0 border-b-2 border-green-500 z-[-1]"
                     layoutId="sidebar"
                     transition={{
                       type: "spring",
@@ -58,7 +61,6 @@ const Navigation = () => {
             );
           })}
         </div>
-        <div className="w-full h-[1px] mt-3 bg-gradient-to-r from-transparent from-0% via-neutral-500 via-50% to-transparent-500 to-100%"></div>
       </LayoutGroup>
     </nav>
   );

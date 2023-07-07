@@ -7,71 +7,72 @@ import twnd from "../public/icons/tailwind.png";
 import mui from "../public/icons/mui.png";
 import firebase from "../public/icons/firebase.png";
 import Badge from "./components/Badge";
+import Button from "./components/Button";
 import Link from "next/link";
 
 function HomePage() {
   return (
-    <section className="p-5 w-full">
-      <h1 className="text-3xl my-5 text-neutral-100">¡Hola! Soy Ezequiel 🫡</h1>
-      <span className="page-break-after: always;">
-        {
-          "Soy un desarrollador Frontend con más de 2 años de experiencia en la creación de aplicaciones web utilizando tecnologías como"
-        }
-        <Badge href={"https://www.google.com"} src={react} text={"React"} />
-        {","}
-        <Badge href={"https://www.google.com"} src={redux} text={"Redux"} />
-        {","}
-        <Badge href={"https://www.google.com"} src={next} text={"Nextjs"} />
-        {"y"}
-        <Badge href={"https://www.google.com"} src={ts} text={"Typescript"} />
-        {"."}
-      </span>
-      <br />
-      <br />
-      <span>
-        {"Para el diseño y estilados, puedo manejar varias bibliotecas"}
-        <Badge href={""} src={css} text={"CSS"} />
-        {"como"}
-        <Badge href={""} src={twnd} text={"Tailwind"} />
-        {"y"}
-        <Badge href={""} src={mui} text={"Material UI"} />
-        {"entre otras, creando interfaces atractivas y funcionales."}
-      </span>
-      <br />
-      <br />
-      <span>
-        {
-          "En cuanto a autenticación y almacenamiento de datos en la nube, suelo trabajar con"
-        }
-        <Badge href={""} src={firebase} text={"Firebase"} />
-        {
-          ", pudiendo adaptarme a nuevas tecnologías si el proyecto lo requiere a fin de lograr un rendimento óptimo."
-        }
-      </span>
-      <br />
-      <br />
-      <span>
-        {"Te invito a explorar algunos de mis proyectos en la siguiente "}
+    <section className="p-3 w-full">
+      <div className="rounded p-3">
+        <h1 className="text-3xl my-5 text-neutral-100">
+          ¡Hola! Soy Ezequiel 🫡
+        </h1>
+        <span className="page-break-after: always;">
+          {
+            "Soy un desarrollador Frontend con más de 2 años de experiencia en la creación de aplicaciones web utilizando tecnologías como"
+          }
+          <Badge href={"https://www.google.com"} src={react} text={"React"} />
+          {","}
+          <Badge href={"https://www.google.com"} src={redux} text={"Redux"} />
+          {","}
+          <Badge href={"https://www.google.com"} src={next} text={"Nextjs"} />
+          {"y"}
+          <Badge href={"https://www.google.com"} src={ts} text={"Typescript"} />
+          {"."}
+        </span>
+        <br />
+        <br />
+        <span>
+          {"Para el diseño y estilados, puedo manejar varias bibliotecas"}
+          <Badge href={""} src={css} text={"CSS"} />
+          {"como"}
+          <Badge href={""} src={twnd} text={"Tailwind"} />
+          {"y"}
+          <Badge href={""} src={mui} text={"Material UI"} />
+          {"entre otras, creando interfaces atractivas y funcionales."}
+        </span>
+        <br />
+        <br />
+        <span>
+          {
+            "En cuanto a autenticación y almacenamiento de datos en la nube, suelo trabajar con"
+          }
+          <Badge href={""} src={firebase} text={"Firebase"} />
+          {
+            ", pudiendo adaptarme a nuevas tecnologías si el proyecto lo requiere."
+          }
+        </span>
+      </div>
+
+      <div className="border border-neutral-500 rounded p-3 my-5">
+        <p>
+          Te invito a que explores algunas de las aplicaciones en las que estuve
+          trabajando
+        </p>
         <Link
           href="/projects"
-          className="text-orange-400 hover:text-orange-300 transition-all"
+          className="flex justify-center w-full text-white font-bold border border-neutral-600 bg-neutral-700 bg-opacity-60 rounded my-3 p-3
+          hover:translate-x-[3px] hover:-translate-y-[3px] hover:shadow-3dgreen hover:text-green-400 transition-all select-none"
         >
-          {"sección"}
+          ¡mira mis proyectos!
         </Link>
-        {
-          " donde vas a encontrar ejemplos de mi trabajo y así tener una idea de mi estilo y habilidades como desarrollador."
-        }
-        <br />
-        <br />
-        {"Si algo captura tu atención o tienes alguna pregunta, no dudes en "}
-        <Link
-          href="/contact"
-          className="text-orange-400 hover:text-orange-300 transition-all"
-        >
-          {"contactarme"}
-        </Link>
-        {"  🙂"}
-      </span>
+      </div>
+      <p>Seguime en mis redes!</p>
+      <div>
+        <div>twitter</div>
+        <div>Github</div>
+        <div>Frontendmentor</div>
+      </div>
     </section>
   );
 }

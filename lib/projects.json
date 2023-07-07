@@ -1,1 +1,170 @@
-[{"id":"01","video":"video.url","cover":"https://res.cloudinary.com/ddeveuwdl/image/upload/v1687510185/portfolio/pokemem/cover-pokemem_farnud.png","blurDataURL":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAGCAYAAAD68A/GAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADxSURBVBhXFcm7SsNQAIDh/5wmPa1JA4WIUi9UlNbRRQIOooMOujnoKyg+g4PgM/gEDq66+AIqunTJoHRoKRYjQSu9UJvktFG/9RPB02na+rS4uOqiBzFfPYNOIMmoCUc7DucnBS6vBxi1lkbrNgdbDkUnptFMqL+4fHcFlcUs/5ZKEtHzz1L/NeQt0KR6xN52GVMp2h8a20rI5n4YJwrDUpL5GZe7h3dmXUUkY+4fNfvHQzY2G6x4z/Sb60hSMP/ycLeDVwmJ+z4TBNXVEZYNXnUN0xBIISRk8tzcRizMDckpQWEqxRznKU/bxFHIcsnmF9QHVTWhK8sVAAAAAElFTkSuQmCC","name":"Memotest Pokemon","link":{"app":"https://pokemem.vercel.app/","repo":"https://github.com/echudev/pokemem"},"description":"Juego memotest con cartas pokemon, utilizando la API:  https://pokeapi.co/","tags":[{"img":"https://res.cloudinary.com/ddeveuwdl/image/upload/v1687740923/logos100px/react_gltd27.png","name":"React"},{"img":"https://res.cloudinary.com/ddeveuwdl/image/upload/v1687740922/logos100px/html_gguxty.png","name":"HTML"},{"img":"https://res.cloudinary.com/ddeveuwdl/image/upload/v1687740922/logos100px/css_bc9zkg.png","name":"CSS"},{"img":"https://res.cloudinary.com/ddeveuwdl/image/upload/v1687740922/logos100px/mui_kdotmw.png","name":"MUI"}]},{"id":"02","video":"","link":{"app":"https://tasker-rho.vercel.app/","repo":"https://github.com/echudev/tasker"},"name":"Tasker","cover":"https://res.cloudinary.com/ddeveuwdl/image/upload/v1687510380/portfolio/tasker/cover-tasker_moah0v.jpg","blurDataURL":"data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/2wBDAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/wAARCAAGAAoDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDzb4tftx+Hv2ov+CL/AO0F8IPDnwL8I/DHxJ+z/wDs/wD7I2jjxNZG3vf+Eyis/jj8DtN1WTxBqK2UOsX8qDRLm502a63zS3GrXk128Uskskn8gD6pfI7obHRCUZkOLPjKkg4yoOMjjgfSiiphUnVpxqTs5OdeL5YRgrUq9SlD3YRjBNQhFSko805XnNynKUn042lToYupSpR5YKnhZqN5StKthKNapZybdnUqTajflgmoQUYRjFf/2Q==","tags":[{"img":"https://res.cloudinary.com/ddeveuwdl/image/upload/v1687740923/logos100px/react_gltd27.png","name":"React"},{"img":"https://res.cloudinary.com/ddeveuwdl/image/upload/v1687740922/logos100px/mui_kdotmw.png","name":"MUI"},{"img":"https://res.cloudinary.com/ddeveuwdl/image/upload/v1687740923/logos100px/redux_jbes7k.png","name":"Redux"},{"img":"https://res.cloudinary.com/ddeveuwdl/image/upload/v1687740922/logos100px/firebase_l1zaxq.png","name":"Firebase"}],"description":"App To-do con listas, tareas, inicio de sesión y almacenamiento en la nube."},{"id":"03","cover":"https://res.cloudinary.com/ddeveuwdl/image/upload/v1687509680/portfolio/sheldongame/cover-sheldon_lb6qyz.jpg","blurDataURL":"data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAXgBeAAD/2wBDAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/2wBDAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/wAARCAAGAAoDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD+e3Vv2gdB8Z6l4j1X4neA/DEHiDX/AA74c0vS5PBvhmSS0Sy03SbxkNxcX/i7S9Q0/WdR16x8KtqHiWB9U1hNDTW9HspYNJuG0i/8tTRfAzKrSeLPGQkZQ0gTwToZQOQCwQt48ViobIUkAkYJAPFFFfeeJvEGb8NYfKP7ExjwP1mdX2/LQw1bn5I04R/3mjW5bRil7vL3erbccG8P5Pm0sW8xwUcS4JSi3VxFNpyra60qtO67J3S6JH//2Q==","link":{"app":"https://sheldon-game.vercel.app/","repo":"https://github.com/echudev/sheldon-game"},"video":"","tags":[{"img":"https://res.cloudinary.com/ddeveuwdl/image/upload/v1687740923/logos100px/react_gltd27.png","name":"React"},{"img":"https://res.cloudinary.com/ddeveuwdl/image/upload/v1687740923/logos100px/ts_tbzjag.png","name":"Typescript"},{"img":"https://res.cloudinary.com/ddeveuwdl/image/upload/v1687740923/logos100px/tailwind_p2hz2r.png","name":"Tailwind"}],"name":"Sheldon Game","description":"Piedra, Papel o Tijera versión Sheldon Cooper. Desafío de Frontendmentor.io"},{"id":"04","name":"Clon Netflix","cover":"https://res.cloudinary.com/ddeveuwdl/image/upload/v1687509666/portfolio/netflixclon/cover-netflix_ti9rbv.jpg","blurDataURL":"data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/2wBDAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/wAARCAAGAAoDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD8qv20f2+PDXiP4U6npGgfCjTpbP4oWk+sahN4h0jwpb3+hW8vgW10rUNJ8PXmmadcX1lHcQ2eDqkl9carMqNbvcRaVeS6Tb/zk3XgPXTc3Bt7vT4YDPKYIReX37qEyN5cXy2ar+7TavyqBxwAOKKK+vzOMcGqWFw8Y06EZTqRhyxm1OUowb56ilUfuwgrOTirXSTbv4eVOWIU8XWlKeIrQoQqT5pRUow96NqcHGnFp1JtuME5OTcm3Y//2Q==","link":{"app":"https://netflix-clon-seven.vercel.app/","repo":"https://github.com/echudev/Netflix-clon"},"video":"","description":"Clon de Netflix con React y CSS,  usando la API: https://www.themoviedb.org/","tags":[{"img":"https://res.cloudinary.com/ddeveuwdl/image/upload/v1687740923/logos100px/react_gltd27.png","name":"React"},{"img":"https://res.cloudinary.com/ddeveuwdl/image/upload/v1687740922/logos100px/html_gguxty.png","name":"HTML"},{"img":"https://res.cloudinary.com/ddeveuwdl/image/upload/v1687740922/logos100px/css_bc9zkg.png","name":"CSS"}]},{"id":"05","cover":"https://res.cloudinary.com/ddeveuwdl/image/upload/v1687509674/portfolio/productpage/cover-productpage_xrnm9n.jpg","name":"Product Page","link":{"app":"https://ecommerce-product-page-echudev.vercel.app/","repo":"https://github.com/echudev/ecommerce-product-page"},"video":"","blurDataURL":"data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/2wBDAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/wAARCAAGAAoDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD+yXwp8Ovippnxp+J/iXUfijruo+F72LxHqHhrwh/wkOqjTbESeJLbVLWznsrixuLHTmghll0mLU9Lie6ttJcWhhu3itp4PWo/FbNGhn8DeG5pyimaaXV/OlllIBklkmfwkHlkkfLPI4DOxLMMk0UV+YU8fjMsowpYPEVIQq4vM6tT2rWKk5rF8itPFKtOMVFWUIyUF0jc/TvqOEzSpKtjaEKtSjh8upU3T5sMo03hVNrkwrowk3J3cpRc3/Nax//Z","tags":[{"img":"https://res.cloudinary.com/ddeveuwdl/image/upload/v1687740923/logos100px/react_gltd27.png","name":"React"},{"img":"https://res.cloudinary.com/ddeveuwdl/image/upload/v1687740922/logos100px/html_gguxty.png","name":"HTML"},{"img":"https://res.cloudinary.com/ddeveuwdl/image/upload/v1687740922/logos100px/css_bc9zkg.png","name":"CSS"},{"img":"https://res.cloudinary.com/ddeveuwdl/image/upload/v1687740923/logos100px/redux_jbes7k.png","name":"Redux"}],"description":"Página de producto de un e-comerce. Desafío de Frontendmentor.io"},{"id":"06","cover":"https://res.cloudinary.com/ddeveuwdl/image/upload/v1687509662/portfolio/calculadora/cover-calculadora_nnqlnt.jpg","link":{"app":"https://echudev.github.io/calculadora-propina/","repo":"https://github.com/echudev/calculadora-propina"},"video":"","blurDataURL":"data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/2wBDAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/wAARCAAGAAoDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD96fDv7TvxP+Ln7N37WXxI8PeAvAnh/wAS/BTxJ8ZPAnhCfxF4nm1vTJtT+HunWl74a1rVNC8O/DfwdFd2OoXOohtV0271C91S2it/JPiPWRKj235uaP8Atw/t6yaTpclzcfszi5k06ye4+zeD/GcVt5720TS/Z4zqxMcHmFvKQklI9qknFFFfo2FoUlLER5E4wrQjFSvLlTp05NJybaV5N221Z/HmdZ3mrpZJVWNqwqYjLqtSvKkqdH2tSOM9nGc1ShCMpqCUeZq9tLn/2Q==","tags":[{"img":"https://res.cloudinary.com/ddeveuwdl/image/upload/v1687740922/logos100px/html_gguxty.png","name":"HTML"},{"img":"https://res.cloudinary.com/ddeveuwdl/image/upload/v1687740922/logos100px/css_bc9zkg.png","name":"CSS"},{"img":"https://res.cloudinary.com/ddeveuwdl/image/upload/v1687740922/logos100px/js_aljdds.png","name":"Javascript"}],"name":"Tip Calculator","description":"Calcula el monto a abonar por cada persona. Desafío Frontendmentor.io"}]
+[
+  {
+    "id": "01",
+    "video": "video.url",
+    "cover": "https://res.cloudinary.com/ddeveuwdl/image/upload/v1687510185/portfolio/pokemem/cover-pokemem_farnud.png",
+    "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAGCAYAAAD68A/GAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADxSURBVBhXFcm7SsNQAIDh/5wmPa1JA4WIUi9UlNbRRQIOooMOujnoKyg+g4PgM/gEDq66+AIqunTJoHRoKRYjQSu9UJvktFG/9RPB02na+rS4uOqiBzFfPYNOIMmoCUc7DucnBS6vBxi1lkbrNgdbDkUnptFMqL+4fHcFlcUs/5ZKEtHzz1L/NeQt0KR6xN52GVMp2h8a20rI5n4YJwrDUpL5GZe7h3dmXUUkY+4fNfvHQzY2G6x4z/Sb60hSMP/ycLeDVwmJ+z4TBNXVEZYNXnUN0xBIISRk8tzcRizMDckpQWEqxRznKU/bxFHIcsnmF9QHVTWhK8sVAAAAAElFTkSuQmCC",
+    "name": "Memotest Pokemon",
+    "link": {
+      "app": "https://pokemem.vercel.app/",
+      "repo": "https://github.com/echudev/pokemem"
+    },
+    "description": "Juego memotest con cartas pokemon, utilizando la API:  https://pokeapi.co/",
+    "tags": [
+      {
+        "img": "https://res.cloudinary.com/ddeveuwdl/image/upload/v1687740923/logos100px/react_gltd27.png",
+        "name": "React"
+      },
+      {
+        "img": "https://res.cloudinary.com/ddeveuwdl/image/upload/v1687740922/logos100px/html_gguxty.png",
+        "name": "HTML"
+      },
+      {
+        "img": "https://res.cloudinary.com/ddeveuwdl/image/upload/v1687740922/logos100px/css_bc9zkg.png",
+        "name": "CSS"
+      },
+      {
+        "img": "https://res.cloudinary.com/ddeveuwdl/image/upload/v1687740922/logos100px/mui_kdotmw.png",
+        "name": "MUI"
+      }
+    ]
+  },
+  {
+    "id": "02",
+    "video": "",
+    "link": {
+      "app": "https://tasker-rho.vercel.app/",
+      "repo": "https://github.com/echudev/tasker"
+    },
+    "name": "Tasker",
+    "cover": "https://res.cloudinary.com/ddeveuwdl/image/upload/v1687510380/portfolio/tasker/cover-tasker_moah0v.jpg",
+    "blurDataURL": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/2wBDAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/wAARCAAGAAoDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDzb4tftx+Hv2ov+CL/AO0F8IPDnwL8I/DHxJ+z/wDs/wD7I2jjxNZG3vf+Eyis/jj8DtN1WTxBqK2UOsX8qDRLm502a63zS3GrXk128Uskskn8gD6pfI7obHRCUZkOLPjKkg4yoOMjjgfSiiphUnVpxqTs5OdeL5YRgrUq9SlD3YRjBNQhFSko805XnNynKUn042lToYupSpR5YKnhZqN5StKthKNapZybdnUqTajflgmoQUYRjFf/2Q==",
+    "tags": [
+      {
+        "img": "https://res.cloudinary.com/ddeveuwdl/image/upload/v1687740923/logos100px/react_gltd27.png",
+        "name": "React"
+      },
+      {
+        "img": "https://res.cloudinary.com/ddeveuwdl/image/upload/v1687740922/logos100px/mui_kdotmw.png",
+        "name": "MUI"
+      },
+      {
+        "img": "https://res.cloudinary.com/ddeveuwdl/image/upload/v1687740923/logos100px/redux_jbes7k.png",
+        "name": "Redux"
+      },
+      {
+        "img": "https://res.cloudinary.com/ddeveuwdl/image/upload/v1687740922/logos100px/firebase_l1zaxq.png",
+        "name": "Firebase"
+      }
+    ],
+    "description": "App To-do con listas, tareas, inicio de sesión y almacenamiento en la nube."
+  },
+  {
+    "id": "03",
+    "cover": "https://res.cloudinary.com/ddeveuwdl/image/upload/v1687509680/portfolio/sheldongame/cover-sheldon_lb6qyz.jpg",
+    "blurDataURL": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAXgBeAAD/2wBDAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/2wBDAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/wAARCAAGAAoDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD+e3Vv2gdB8Z6l4j1X4neA/DEHiDX/AA74c0vS5PBvhmSS0Sy03SbxkNxcX/i7S9Q0/WdR16x8KtqHiWB9U1hNDTW9HspYNJuG0i/8tTRfAzKrSeLPGQkZQ0gTwToZQOQCwQt48ViobIUkAkYJAPFFFfeeJvEGb8NYfKP7ExjwP1mdX2/LQw1bn5I04R/3mjW5bRil7vL3erbccG8P5Pm0sW8xwUcS4JSi3VxFNpyra60qtO67J3S6JH//2Q==",
+    "link": {
+      "app": "https://sheldon-game.vercel.app/",
+      "repo": "https://github.com/echudev/sheldon-game"
+    },
+    "video": "",
+    "tags": [
+      {
+        "img": "https://res.cloudinary.com/ddeveuwdl/image/upload/v1687740923/logos100px/react_gltd27.png",
+        "name": "React"
+      },
+      {
+        "img": "https://res.cloudinary.com/ddeveuwdl/image/upload/v1687740923/logos100px/ts_tbzjag.png",
+        "name": "Typescript"
+      },
+      {
+        "img": "https://res.cloudinary.com/ddeveuwdl/image/upload/v1687740923/logos100px/tailwind_p2hz2r.png",
+        "name": "Tailwind"
+      }
+    ],
+    "name": "Sheldon Game",
+    "description": "Piedra, Papel o Tijera versión Sheldon Cooper. Desafío de Frontendmentor.io"
+  },
+  {
+    "id": "04",
+    "name": "Clon Netflix",
+    "cover": "https://res.cloudinary.com/ddeveuwdl/image/upload/v1687509666/portfolio/netflixclon/cover-netflix_ti9rbv.jpg",
+    "blurDataURL": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/2wBDAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/wAARCAAGAAoDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD8qv20f2+PDXiP4U6npGgfCjTpbP4oWk+sahN4h0jwpb3+hW8vgW10rUNJ8PXmmadcX1lHcQ2eDqkl9carMqNbvcRaVeS6Tb/zk3XgPXTc3Bt7vT4YDPKYIReX37qEyN5cXy2ar+7TavyqBxwAOKKK+vzOMcGqWFw8Y06EZTqRhyxm1OUowb56ilUfuwgrOTirXSTbv4eVOWIU8XWlKeIrQoQqT5pRUow96NqcHGnFp1JtuME5OTcm3Y//2Q==",
+    "link": {
+      "app": "https://netflix-clon-seven.vercel.app/",
+      "repo": "https://github.com/echudev/Netflix-clon"
+    },
+    "video": "",
+    "description": "Clon de Netflix con React y CSS,  usando la API: https://www.themoviedb.org/",
+    "tags": [
+      {
+        "img": "https://res.cloudinary.com/ddeveuwdl/image/upload/v1687740923/logos100px/react_gltd27.png",
+        "name": "React"
+      },
+      {
+        "img": "https://res.cloudinary.com/ddeveuwdl/image/upload/v1687740922/logos100px/html_gguxty.png",
+        "name": "HTML"
+      },
+      {
+        "img": "https://res.cloudinary.com/ddeveuwdl/image/upload/v1687740922/logos100px/css_bc9zkg.png",
+        "name": "CSS"
+      }
+    ]
+  },
+  {
+    "id": "05",
+    "cover": "https://res.cloudinary.com/ddeveuwdl/image/upload/v1687509674/portfolio/productpage/cover-productpage_xrnm9n.jpg",
+    "name": "Product Page",
+    "link": {
+      "app": "https://ecommerce-product-page-echudev.vercel.app/",
+      "repo": "https://github.com/echudev/ecommerce-product-page"
+    },
+    "video": "",
+    "blurDataURL": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/2wBDAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/wAARCAAGAAoDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD+yXwp8Ovippnxp+J/iXUfijruo+F72LxHqHhrwh/wkOqjTbESeJLbVLWznsrixuLHTmghll0mLU9Lie6ttJcWhhu3itp4PWo/FbNGhn8DeG5pyimaaXV/OlllIBklkmfwkHlkkfLPI4DOxLMMk0UV+YU8fjMsowpYPEVIQq4vM6tT2rWKk5rF8itPFKtOMVFWUIyUF0jc/TvqOEzSpKtjaEKtSjh8upU3T5sMo03hVNrkwrowk3J3cpRc3/Nax//Z",
+    "tags": [
+      {
+        "img": "https://res.cloudinary.com/ddeveuwdl/image/upload/v1687740923/logos100px/react_gltd27.png",
+        "name": "React"
+      },
+      {
+        "img": "https://res.cloudinary.com/ddeveuwdl/image/upload/v1687740922/logos100px/html_gguxty.png",
+        "name": "HTML"
+      },
+      {
+        "img": "https://res.cloudinary.com/ddeveuwdl/image/upload/v1687740922/logos100px/css_bc9zkg.png",
+        "name": "CSS"
+      },
+      {
+        "img": "https://res.cloudinary.com/ddeveuwdl/image/upload/v1687740923/logos100px/redux_jbes7k.png",
+        "name": "Redux"
+      }
+    ],
+    "description": "Página de producto de un e-comerce. Desafío de Frontendmentor.io"
+  },
+  {
+    "id": "06",
+    "cover": "https://res.cloudinary.com/ddeveuwdl/image/upload/v1687509662/portfolio/calculadora/cover-calculadora_nnqlnt.jpg",
+    "link": {
+      "app": "https://echudev.github.io/calculadora-propina/",
+      "repo": "https://github.com/echudev/calculadora-propina"
+    },
+    "video": "",
+    "blurDataURL": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/2wBDAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/wAARCAAGAAoDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD96fDv7TvxP+Ln7N37WXxI8PeAvAnh/wAS/BTxJ8ZPAnhCfxF4nm1vTJtT+HunWl74a1rVNC8O/DfwdFd2OoXOohtV0271C91S2it/JPiPWRKj235uaP8Atw/t6yaTpclzcfszi5k06ye4+zeD/GcVt5720TS/Z4zqxMcHmFvKQklI9qknFFFfo2FoUlLER5E4wrQjFSvLlTp05NJybaV5N221Z/HmdZ3mrpZJVWNqwqYjLqtSvKkqdH2tSOM9nGc1ShCMpqCUeZq9tLn/2Q==",
+    "tags": [
+      {
+        "img": "https://res.cloudinary.com/ddeveuwdl/image/upload/v1687740922/logos100px/html_gguxty.png",
+        "name": "HTML"
+      },
+      {
+        "img": "https://res.cloudinary.com/ddeveuwdl/image/upload/v1687740922/logos100px/css_bc9zkg.png",
+        "name": "CSS"
+      },
+      {
+        "img": "https://res.cloudinary.com/ddeveuwdl/image/upload/v1687740922/logos100px/js_aljdds.png",
+        "name": "Javascript"
+      }
+    ],
+    "name": "Tip Calculator",
+    "description": "Calcula el monto a abonar por cada persona. Desafío Frontendmentor.io"
+  }
+]
