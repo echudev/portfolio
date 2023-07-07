@@ -7,7 +7,6 @@ import twnd from "../public/icons/tailwind.png";
 import mui from "../public/icons/mui.png";
 import firebase from "../public/icons/firebase.png";
 import Badge from "./components/Badge";
-import Button from "./components/Button";
 import Link from "next/link";
 
 function HomePage() {
@@ -61,7 +60,7 @@ function HomePage() {
         </p>
         <Link
           href="/projects"
-          className="flex justify-center w-full text-white font-bold border border-neutral-600 bg-neutral-700 bg-opacity-60 rounded my-3 p-3
+          className="flex justify-center w-full text-neutral-200 font-bold border border-neutral-700 bg-neutral-700 bg-opacity-60 rounded my-3 p-3
           hover:translate-x-[3px] hover:-translate-y-[3px] hover:shadow-3dgreen hover:text-green-400 transition-all select-none"
         >
           ¡mira mis proyectos!

@@ -14,9 +14,9 @@ const Button = ({ text, link, icon, height, width }: ButtonProps) => {
     <>
       {link && icon && (
         <Link href={link} target="_blank">
-          <div className="group flex gap-2 border border-gray-500 rounded-sm p-1 bg-black bg-opacity-60  text-xs text-gray-200 transition-all hover:translate-x-[3px] hover:-translate-y-[3px] hover:shadow-3dgreen hover:text-green-300">
+          <div className="group flex gap-2 border rounded-sm p-1 border-neutral-700 bg-neutral-700 bg-opacity-60  text-xs text-neutral-200 transition-all hover:translate-x-[3px] hover:-translate-y-[3px] hover:shadow-3dgreen hover:text-green-400">
             <Image
-              className="rounded-full border bg-white group-hover:bg-green-400 transition-all"
+              className="bg-transparent invert group-hover:invert-0 rounded-full border border-transparent group-hover:bg-green-400 transition-all"
               alt={text}
               src={icon}
               width={height}
