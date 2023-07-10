@@ -17,8 +17,8 @@ const navLinks = [
   },
   {
     id: 2,
-    name: "Contacto",
-    href: "/contact",
+    name: "Visitas",
+    href: "/guestbook",
   },
 ];
 
