@@ -8,17 +8,12 @@ import mui from "../public/icons/mui.png";
 import firebase from "../public/icons/firebase.png";
 import Badge from "./components/Badge";
 import Button from "./components/Button";
-import Image from "next/image";
-import pokemonCover from "../public/images/pokemem/cover-pokemem.png";
-import nflxCover from "../public/images/netflixclon/cover-netflix.jpg";
-import sheldonCover from "../public/images/sheldongame/cover-sheldon.jpg";
-import calculatorCover from "../public/images/calculadora/cover-calculadora.jpg";
-import Link from "next/link";
+import Carousel from "./components/Carousel";
 
 function HomePage() {
   return (
     <section className="p-3 w-full">
-      <div className="rounded p-3">
+      <div className="p-3">
         <h1 className="text-3xl my-5 text-neutral-100">
           ¡Hola! Soy Ezequiel 🫡
         </h1>
@@ -58,51 +53,7 @@ function HomePage() {
           }
         </span>
       </div>
-      <div className="flex flex-col justify-around border border-neutral-500 rounded p-3 my-5 select-none ">
-        <h3 className="mb-5">Dejá un mensaje en la sección de visitas 🙂</h3>
-        <div className="flex">
-          <div
-            aria-label="images container"
-            className="group flex flex-col relative min-h-[140px] min-w-[250px] cursor-pointer"
-          >
-            <Image
-              className="absolute shadow rounded hover:z-50"
-              src={pokemonCover}
-              alt="pokemon"
-              width={250}
-              height={150}
-            />
-            <Image
-              className="absolute shadow rounded left-[2%] top-[1%] group-hover:left-[20%] transition-all ease-in-out hover:z-50"
-              src={nflxCover}
-              alt="netflix clon"
-              width={250}
-              height={150}
-            />
-            <Image
-              className="absolute rounded shadow left-[4%] top-[2%] group-hover:left-[40%] transition-all ease-in-out hover:z-50"
-              src={sheldonCover}
-              alt="sheldon game"
-              width={250}
-              height={150}
-            />
-            <Image
-              className="absolute rounded shadow left-[6%] top-[3%] group-hover:left-[60%] transition-all ease-in-out hover:z-50"
-              src={calculatorCover}
-              alt="calculator"
-              width={250}
-              height={150}
-            />
-          </div>
-          <Link
-            href="/projects"
-            className="ml-auto mt-auto bg-green-500 rounded h-10 w-20"
-          >
-            ver
-          </Link>
-        </div>
-      </div>
-
+      <Carousel />
       <div className="flex justify-around border border-neutral-500 rounded p-3 my-5">
         <p>Dejá un mensaje en la sección de visitas 🙂</p>
         <Button
