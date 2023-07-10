@@ -40,15 +40,15 @@ const Navigation = () => {
                 key={i}
                 href={link.href}
                 className={clsx(
-                  "relative text-center inline-block z-10 px-2 leading-10 hover:text-green-500 transition-all",
-                  { "text-green-500": isActive }
+                  "font-bold relative text-center inline-block z-10 px-2 leading-10 hover:text-violet-500 transition-all",
+                  { "text-white": isActive }
                 )}
               >
                 {link.name}
 
                 {isActive ? (
                   <motion.div
-                    className="absolute inset-0 border-b-2 border-green-500 z-[-1]"
+                    className="absolute inset-0 border-b-2 border-violet-500 z-[-1]"
                     layoutId="sidebar"
                     transition={{
                       type: "spring",
