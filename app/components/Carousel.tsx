@@ -5,7 +5,7 @@ import clsx from "clsx";
 import { useEffect, useRef, useState } from "react";
 import pokemonCover from "../../public/images/pokemem/cover-pokemem.png";
 import nflxCover from "../../public/images/netflixclon/cover-netflix.jpg";
-import sheldonCover from "../../public/images/sheldongame/cover-sheldon.jpg";
+import taskerCover from "../../public/images/tasker/cover-tasker.jpg";
 import calcCover from "../../public/images/calculadora/cover-calculadora.jpg";
 import prevBtnIcon from "../../public/icons/icon-previous.svg";
 import nextBtnIcon from "../../public/icons/icon-next.svg";
@@ -59,10 +59,13 @@ const Carousel = () => {
 
   return (
     <div className="my-10 mx-2 shadow-lg">
+      <div className="mt-5 w-full flex justify-between">
+        <p className="m-2">¡pasa a ver mis proyectos!</p>
+      </div>
       <div className="group relative p-4 w-[full] aspect-video flex flex-col shadow-md select-none overflow-hidden">
         <div
           aria-label="images container"
-          className="absolute inset-0 flex gap-2 -z-10 brightness-75 transition-all"
+          className="absolute inset-0 flex gap-2 -z-10 brightness-90 group-hover:brightness-50 transition-all"
         >
           <Image
             ref={img1}
@@ -81,8 +84,8 @@ const Carousel = () => {
           <Image
             ref={img3}
             style={{ transition: "1s", opacity: "0", borderRadius: "4px" }}
-            src={sheldonCover}
-            alt="sheldon game"
+            src={taskerCover}
+            alt="tasker"
             fill
           />
           <Image
@@ -95,13 +98,13 @@ const Carousel = () => {
         </div>
         <button
           onClick={handleNextBtn}
-          className="invert rounded-full flex items-center absolute right-0 mx-5 p-1 top-1/2 -translate-y-1/2 translate-x-96 group-hover:translate-x-0 transition-transform ease-in-out"
+          className="invert hover:scale-125 rounded-full flex items-center absolute right-0 mx-5 p-1 top-1/2 -translate-y-1/2 translate-x-96 group-hover:translate-x-0 transition-transform ease-in-out"
         >
           <Image alt="next-btn" src={nextBtnIcon} width={20} height={20} />
         </button>
         <button
           onClick={handlePrevBtn}
-          className="invert rounded-full flex items-center absolute left-0 mx-5 p-1 top-1/2 -translate-y-1/2 -translate-x-96 group-hover:translate-x-0 transition-transform ease-in-out"
+          className="invert hover:scale-125 rounded-full flex items-center absolute left-0 mx-5 p-1 top-1/2 -translate-y-1/2 -translate-x-96 group-hover:translate-x-0 transition-transform ease-in-out"
         >
           <Image alt="prev-btn" src={prevBtnIcon} width={20} height={20} />
         </button>
@@ -112,18 +115,18 @@ const Carousel = () => {
               onClick={() => setCurrentIndex(i)}
               key={i}
               className={clsx(
-                "h-2 w-2 rounded-full bg-neutral-100 opacity-75 transition-opacity",
-                { "bg-violet-500 opacity-100": i === currentIndex }
+                "h-2 w-2 rounded-full border border-neutral-800 bg-neutral-300",
+                {
+                  "bg-violet-500 border border-violet-900": i === currentIndex,
+                }
               )}
             ></li>
           ))}
         </ul>
-      </div>
-      <div className="mt-5 w-full flex justify-between">
-        <p>pasa a ver mis proyectos!</p>
         <Link
           href="/projects"
-          className="flex justify-center items-center bg-violet-700 rounded-md h-10 w-28 shadow-violet-900 hover:bg-violet-500 transition-all shadow"
+          className="absolute bottom-0 right-0 m-5 h-10 w-28 flex justify-center items-center translate-y-96 group-hover:translate-y-0
+           bg-violet-700 rounded-md  shadow shadow-violet-900 hover:bg-violet-500 transition-all ease-in-out"
         >
           ver Proyectos
         </Link>
