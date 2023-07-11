@@ -5,6 +5,4 @@
 - Nextjs
 - Typescript
 - Tailwind
-- Firebase Firestore
-- Framer Motion
-- Clsx
+- Firebase
