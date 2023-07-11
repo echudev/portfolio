@@ -32,7 +32,7 @@ const Carousel = () => {
 
   useEffect(() => {
     const handlerImgOpacity = () => {
-      const imgArray = [img1.current, img2.current, img3.current, img4.current];
+      const imgArray = [img4.current, img2.current, img1.current, img3.current];
       imgArray.map((img, i) => {
         if (img !== null) {
           i === currentIndex

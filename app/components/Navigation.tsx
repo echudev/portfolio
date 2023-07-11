@@ -1,5 +1,6 @@
 "use client";
 import Link from "next/link";
+import { TwIcon, Gh2Icon, DsIcon } from "./Icons";
 import { usePathname } from "next/navigation";
 import { LayoutGroup, motion } from "framer-motion";
 import clsx from "clsx";
@@ -60,6 +61,27 @@ const Navigation = () => {
               </Link>
             );
           })}
+          <div
+            aria-label="divisor"
+            className="mr-7 ml-auto border-l-[1px] border-neutral-300 opacity-30 h-1/2 translate-y-1/2"
+          ></div>
+          <div
+            aria-label="contacto"
+            className="flex items-end mb-[10px] mr-5 gap-3 cursor-pointer"
+          >
+            <Link href="https://twitter.com/echudev" target="_blank">
+              <TwIcon />
+            </Link>
+            <Link href="https://github.com/echudev" target="_blank">
+              <Gh2Icon />
+            </Link>
+            <Link
+              href="https://discordapp.com/users/ezestebanm"
+              target="_blank"
+            >
+              <DsIcon />
+            </Link>
+          </div>
         </div>
       </LayoutGroup>
     </nav>
