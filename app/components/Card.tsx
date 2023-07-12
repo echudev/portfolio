@@ -2,7 +2,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { ProjectData } from "@/lib/getProjects";
 import Button from "./Button";
-import GHicon from "../../public/icons/github.png";
 
 interface CardProps {
   data: ProjectData;
@@ -52,13 +51,7 @@ const Card = ({ data }: CardProps) => {
           </div>
         ))}
         <div className="ml-auto">
-          <Button
-            text="código"
-            link={data.link.repo}
-            icon={GHicon}
-            height={20}
-            width={20}
-          />
+          <Button text="código" link={data.link.repo} />
         </div>
       </div>
     </div>
