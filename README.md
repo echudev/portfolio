@@ -2,7 +2,7 @@
 
 ### Built with
 
-- Framework: [Nextjs](https://nextjs.org/)
+- Framework: [Next.js](https://nextjs.org/)
 - Styling: [Tailwind CSS](https://tailwindcss.com/)
 - Deployment: [Vercel](https://vercel.com/)
 - Database: [Firebase Firestore](https://firebase.google.com/)
