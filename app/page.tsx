@@ -21,24 +21,36 @@ function HomePage() {
           {
             "Soy un desarrollador Frontend con más de 2 años de experiencia en la creación de aplicaciones web utilizando tecnologías como"
           }
-          <Badge href={"https://www.google.com"} src={react} text={"React"} />
+          <Badge href={"https://es.react.dev/"} src={react} text={"React"} />
           {","}
-          <Badge href={"https://www.google.com"} src={redux} text={"Redux"} />
+          <Badge href={"https://redux.js.org/"} src={redux} text={"Redux"} />
           {","}
-          <Badge href={"https://www.google.com"} src={next} text={"Nextjs"} />
+          <Badge href={"https://nextjs.org/"} src={next} text={"Nextjs"} />
           {"y"}
-          <Badge href={"https://www.google.com"} src={ts} text={"Typescript"} />
+          <Badge
+            href={"https://www.typescriptlang.org/"}
+            src={ts}
+            text={"Typescript"}
+          />
           {"."}
         </span>
         <br />
         <br />
         <span>
           {"Para el diseño y estilados, puedo manejar varias bibliotecas"}
-          <Badge href={""} src={css} text={"CSS"} />
+          <Badge
+            href={"https://www.w3schools.com/Css/"}
+            src={css}
+            text={"CSS"}
+          />
           {"como"}
-          <Badge href={""} src={twnd} text={"Tailwind"} />
+          <Badge
+            href={"https://tailwindcss.com/"}
+            src={twnd}
+            text={"Tailwind"}
+          />
           {"y"}
-          <Badge href={""} src={mui} text={"Material UI"} />
+          <Badge href={"https://mui.com/"} src={mui} text={"Material UI"} />
           {"entre otras, creando interfaces atractivas y funcionales."}
         </span>
         <br />
@@ -47,7 +59,11 @@ function HomePage() {
           {
             "En cuanto a autenticación y almacenamiento de datos en la nube, suelo trabajar con"
           }
-          <Badge href={""} src={firebase} text={"Firebase"} />
+          <Badge
+            href={"https://firebase.google.com/"}
+            src={firebase}
+            text={"Firebase"}
+          />
           {
             ", pudiendo adaptarme a nuevas tecnologías si el proyecto lo requiere."
           }
@@ -56,13 +72,7 @@ function HomePage() {
       <Carousel />
       <div className="flex justify-around border border-neutral-500 rounded p-3 my-5">
         <p>Dejá un mensaje en la sección de visitas 🙂</p>
-        <Button
-          icon={next}
-          text="visitas"
-          link="/contact"
-          height={20}
-          width={20}
-        />
+        <Button text="visitas" link="/contact" />
       </div>
     </section>
   );
