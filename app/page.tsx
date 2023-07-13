@@ -14,9 +14,7 @@ function HomePage() {
   return (
     <section className="p-3 w-full">
       <div className="p-3">
-        <h1 className="text-3xl my-5 text-neutral-100">
-          ¡Hola! Soy Ezequiel 🫡
-        </h1>
+        <h1 className="text-2xl my-5 text-neutral-100">hola, soy Ezequiel 🫡</h1>
         <span className="page-break-after: always;">
           {
             "Soy un desarrollador Frontend con más de 2 años de experiencia en la creación de aplicaciones web utilizando tecnologías como"
