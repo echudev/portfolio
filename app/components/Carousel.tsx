@@ -40,7 +40,7 @@ const Carousel = () => {
   // }, [currentIndex]);
 
   return (
-    <div className="relative mt-20 mx-2">
+    <div className="relative my-10 mx-2">
       <div className="flex">
         <p>
           te invito a que pases por la sección proyectos y veas algunas de las

@@ -9,6 +9,7 @@ import firebase from "../public/icons/firebase.png";
 import Badge from "./components/Badge";
 import Button from "./components/Button";
 import Carousel from "./components/Carousel";
+import Link from "next/link";
 
 function HomePage() {
   return (
@@ -67,10 +68,20 @@ function HomePage() {
           }
         </span>
       </div>
+      <div className="w-[80%] mx-auto my-6 border-b-[1px] border-neutral-500 border-opacity-30"></div>
       <Carousel />
-      <div className="flex justify-around border border-neutral-500 rounded p-3 my-5">
-        <p>Dejá un mensaje en la sección de visitas 🙂</p>
-        <Button text="visitas" link="/contact" />
+      <div className="w-[80%] mx-auto my-6 border-b-[1px] border-neutral-500 border-opacity-30"></div>
+      <div className="flex flex-col justify-center p-3 my-10 bg-neutral-300 bg-opacity-5 rounded">
+        <p>
+          Además, si querés y tenés ganas, podes dejar tu comentario en la
+          sección visitas 🙂
+        </p>
+        <Link
+          href="/guestbook"
+          className="text-center px-3 py-1 mt-3 bg-violet-700 rounded shadow shadow-violet-900 hover:bg-violet-500 transition-all"
+        >
+          voy a comentar!
+        </Link>
       </div>
     </section>
   );
