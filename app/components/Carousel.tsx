@@ -10,11 +10,24 @@ import calcCover from "../../public/images/calculadora/cover-calculadora.jpg";
 import prevBtnIcon from "../../public/icons/icon-previous.svg";
 import nextBtnIcon from "../../public/icons/icon-next.svg";
 
+interface Image {
+  ref: React.RefObject<HTMLImageElement>;
+  source: StaticImageData;
+  alt: string;
+}
+
 const Carousel = () => {
   const img1 = useRef<HTMLImageElement | null>(null);
   const img2 = useRef<HTMLImageElement | null>(null);
   const img3 = useRef<HTMLImageElement | null>(null);
   const img4 = useRef<HTMLImageElement | null>(null);
+  const title = useRef<HTMLImageElement | null>(null);
+  const images: Image[] = [
+    { ref: img1, source: pokemonCover, alt: "pokemon memotest" },
+    { ref: img2, source: nflxCover, alt: "clon netflix" },
+    { ref: img3, source: taskerCover, alt: "tasker app" },
+    { ref: img4, source: calcCover, alt: "splitter" },
+  ];
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const handleNextBtn = () => {
@@ -31,17 +44,6 @@ const Carousel = () => {
   };
 
   useEffect(() => {
-    const handlerImgOpacity = () => {
-      const imgArray = [img4.current, img2.current, img1.current, img3.current];
-      imgArray.map((img, i) => {
-        if (img !== null) {
-          i === currentIndex
-            ? (img.style.opacity = "1")
-            : (img.style.opacity = "0");
-        }
-      });
-    };
-
     const automaticNextImgInterval = setInterval(() => {
       setCurrentIndex(currentIndex + 1);
       if (currentIndex >= 3) {
@@ -49,52 +51,45 @@ const Carousel = () => {
       }
     }, 4000);
 
-    handlerImgOpacity();
-
     return () => {
-      handlerImgOpacity();
       clearInterval(automaticNextImgInterval);
     };
   }, [currentIndex]);
 
   return (
-    <div className="my-10 mx-2 shadow-lg">
-      <div className="mt-5 w-full flex justify-between">
-        <p className="m-2">¡pasa a ver mis proyectos!</p>
+    <div className="mt-20 mx-2">
+      <div ref={title} className="relative">
+        {images.map((img, i) => (
+          <h4
+            key={i}
+            className={clsx(
+              "absolute ml-1 -top-7 font-bold text-lg -translate-x-96 transition-transform duration-500",
+              {
+                "translate-x-0": i === currentIndex,
+              }
+            )}
+          >
+            {img.alt}
+          </h4>
+        ))}
       </div>
-      <div className="group relative p-4 w-[full] aspect-video flex flex-col shadow-md select-none overflow-hidden">
+      <div className="group relative p-4 aspect-video flex flex-col shadow-md select-none overflow-hidden">
         <div
           aria-label="images container"
-          className="absolute inset-0 flex gap-2 -z-10 brightness-90 group-hover:brightness-50 transition-all"
+          className="absolute inset-0 flex gap-2 -z-10 brightness-75 group-hover:brightness-50 transition-all"
         >
-          <Image
-            ref={img1}
-            style={{ transition: "1s", opacity: "0", borderRadius: "4px" }}
-            src={pokemonCover}
-            alt="pokemon"
-            fill
-          />
-          <Image
-            ref={img2}
-            style={{ transition: "1s", opacity: "0", borderRadius: "4px" }}
-            src={nflxCover}
-            alt="netflix clon"
-            fill
-          />
-          <Image
-            ref={img3}
-            style={{ transition: "1s", opacity: "0", borderRadius: "4px" }}
-            src={taskerCover}
-            alt="tasker"
-            fill
-          />
-          <Image
-            ref={img4}
-            style={{ transition: "1s", opacity: "0", borderRadius: "4px" }}
-            src={calcCover}
-            alt="calculator"
-            fill
-          />
+          {images.map((image, i) => (
+            <Image
+              key={i}
+              ref={image.ref}
+              className={clsx("transition duration-1000 opacity-0 rounded", {
+                "opacity-100": i === currentIndex,
+              })}
+              src={image.source}
+              alt={image.alt}
+              fill
+            />
+          ))}
         </div>
         <button
           onClick={handleNextBtn}
@@ -109,28 +104,28 @@ const Carousel = () => {
           <Image alt="prev-btn" src={prevBtnIcon} width={20} height={20} />
         </button>
 
-        <ul className="absolute bottom-0 mb-2 left-1/2 -translate-x-1/2 flex gap-2 cursor-pointer">
-          {Array.from({ length: 4 }).map((_, i) => (
-            <li
-              onClick={() => setCurrentIndex(i)}
-              key={i}
-              className={clsx(
-                "h-2 w-2 rounded-full border border-neutral-800 bg-neutral-300",
-                {
-                  "bg-violet-500 border border-violet-900": i === currentIndex,
-                }
-              )}
-            ></li>
-          ))}
-        </ul>
         <Link
           href="/projects"
-          className="absolute bottom-0 right-0 m-5 h-10 w-28 flex justify-center items-center translate-y-96 group-hover:translate-y-0
+          className="absolute bottom-0 right-0 m-5 py-1 px-3 flex justify-center items-center translate-y-96 group-hover:translate-y-0
            bg-violet-700 rounded-md  shadow shadow-violet-900 hover:bg-violet-500 transition-all ease-in-out"
         >
-          ver Proyectos
+          ver más
         </Link>
       </div>
+      <ul className="mt-2 flex justify-center gap-2 cursor-pointer">
+        {Array.from({ length: 4 }).map((_, i) => (
+          <li
+            key={i}
+            onClick={() => setCurrentIndex(i)}
+            className={clsx(
+              "h-1 w-3 rounded-full border border-neutral-400 bg-neutral-300 transition-all",
+              {
+                "bg-violet-500 border border-violet-600": i === currentIndex,
+              }
+            )}
+          ></li>
+        ))}
+      </ul>
     </div>
   );
 };
