@@ -7,7 +7,6 @@ import twnd from "../public/icons/tailwind.png";
 import mui from "../public/icons/mui.png";
 import firebase from "../public/icons/firebase.png";
 import Badge from "./components/Badge";
-import Button from "./components/Button";
 import Carousel from "./components/Carousel";
 import Link from "next/link";
 
