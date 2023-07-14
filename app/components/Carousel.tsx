@@ -3,11 +3,11 @@ import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 import clsx from "clsx";
 import { useEffect, useRef, useState } from "react";
-import pokemonCover from "../../public/images/cover-pokemem.png";
-import nflxCover from "../../public/images/cover-netflix.jpg";
-import taskerCover from "../../public/images/cover-tasker.jpg";
-import calcCover from "../../public/images/cover-calculadora.jpg";
-import sheldonCover from "../../public/images/cover-sheldon.jpg";
+import pokemonCover from "../../public/covers/pokemem.png";
+import nflxCover from "../../public/covers/netflix.jpg";
+import taskerCover from "../../public/covers/tasker.jpg";
+import calcCover from "../../public/covers/calculadora.jpg";
+import sheldonCover from "../../public/covers/sheldon.jpg";
 
 interface Image {
   ref: React.RefObject<HTMLImageElement>;
