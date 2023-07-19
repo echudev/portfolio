@@ -17,7 +17,7 @@ function FormComponent() {
       {user ? (
         <div className="p-3">
           <input name="userMessage" type="text" placeholder=" tu mensaje" />
-          <button className="m-1 border rounded-sm px-2 border-neutral-700 hover:border-transparent bg-neutral-700 bg-opacity-60 text-neutral-200 hover:translate-x-[3px] hover:-translate-y-[3px] hover:shadow-3dneutral hover:text-white transition-all duration-75">
+          <button className="m-1 border rounded-sm px-2 border-neutral-700 hover:border-transparent bg-neutral-700 bg-opacity-60  text-violet-500 hover:text-white font-bold hover:translate-x-[3px] hover:-translate-y-[3px] hover:shadow-3dneutral transition-all duration-75">
             Enviar
           </button>
           <div aria-label="logout">
