@@ -77,7 +77,7 @@ function HomePage() {
         </p>
         <Link
           href="/guestbook"
-          className="text-center px-3 py-1 mt-3 bg-violet-700 rounded shadow shadow-violet-900 hover:bg-violet-500 transition-all"
+          className="text-center px-3 py-1 mt-3 bg-violet-700 rounded shadow shadow-black hover:bg-violet-500 transition-all"
         >
           voy a comentar!
         </Link>

@@ -25,14 +25,3 @@ export function GithubLoginBtn() {
     </button>
   );
 }
-
-export function LogoutFirebaseBtn() {
-  return (
-    <button
-      onClick={logoutFirebase}
-      className="text-center px-3 my-1 bg-violet-700 rounded shadow shadow-violet-900 hover:bg-violet-500 transition-all"
-    >
-      salir
-    </button>
-  );
-}
