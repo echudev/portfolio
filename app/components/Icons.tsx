@@ -152,13 +152,7 @@ export const GoogleIcon = () => {
       <title>Google</title>
       <desc>Created with Sketch.</desc>
       <defs></defs>
-      <g
-        id="Icons"
-        stroke="none"
-        stroke-width="1"
-        fill="none"
-        fill-rule="evenodd"
-      >
+      <g id="Icons" stroke="none" fill="none">
         <g id="Color-" transform="translate(-401.000000, -860.000000)">
           <g id="Google" transform="translate(401.000000, 860.000000)">
             <path
