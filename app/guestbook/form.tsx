@@ -17,8 +17,8 @@ function FormComponent() {
       {user ? (
         <div className="p-3">
           <input name="userMessage" type="text" placeholder=" tu mensaje" />
-          <button className="border border-neutral-700 bg-neutral-700 bg-opacity-60 text-neutral-200 px-2 ml-1 rounded-sm hover:brightness-125 transition">
-            enviar
+          <button className="m-1 border rounded-sm px-2 border-neutral-700 hover:border-transparent bg-neutral-700 bg-opacity-60 text-neutral-200 hover:translate-x-[3px] hover:-translate-y-[3px] hover:shadow-3dneutral hover:text-white transition-all duration-75">
+            Enviar
           </button>
           <div aria-label="logout">
             <LogoutFirebaseBtn />

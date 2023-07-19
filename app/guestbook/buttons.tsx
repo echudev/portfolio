@@ -30,7 +30,7 @@ export function LogoutFirebaseBtn() {
   return (
     <button
       onClick={logoutFirebase}
-      className="group flex gap-2 border rounded-sm py-1 px-2 items-center border-neutral-700 hover:border-transparent bg-neutral-700 bg-opacity-60 text-neutral-200 hover:translate-x-[3px] hover:-translate-y-[3px] hover:shadow-3dneutral transition-all duration-75"
+      className="group my-1 flex gap-2 border rounded-sm py-1 px-2 items-center border-neutral-700 hover:border-transparent bg-neutral-700 bg-opacity-60 text-neutral-200 hover:translate-x-[3px] hover:-translate-y-[3px] hover:shadow-3dneutral hover:text-white transition-all duration-75"
     >
       Salir
     </button>
