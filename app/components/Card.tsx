@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { ProjectData } from "@/lib/getProjects";
-import { Gh3Icon } from "./Icons";
+import { Gh3Icon } from "../components/Icons";
 
 interface ButtonProps {
   text: string;
@@ -11,7 +11,7 @@ interface ButtonProps {
 const Button = ({ text, link }: ButtonProps) => {
   return (
     <Link href={link} target="_blank">
-      <button className="group flex gap-2 border rounded-sm py-1 px-2 items-center border-neutral-700 hover:border-transparent bg-neutral-700 bg-opacity-60 text-xs text-neutral-200 hover:translate-x-[3px] hover:-translate-y-[3px] hover:shadow-3dgreen hover:text-green-400 transition-all duration-75">
+      <button className="group flex gap-2 border rounded-sm py-1 px-2 items-center border-neutral-700 hover:border-b-green-400 hover:border-l-green-400 bg-neutral-700 bg-opacity-60 text-xs text-neutral-200 hover:translate-x-[3px] hover:-translate-y-[3px] hover:shadow-3dgreen hover:text-green-400 transition-all duration-75">
         <Gh3Icon />
         {text}
       </button>
@@ -31,7 +31,7 @@ const Card = ({ data }: CardProps) => {
     >
       <Link href={data.link.app} target="_blank">
         <Image
-          className="rounded cursor-pointer hover:translate-x-[6px] hover:-translate-y-[6px] hover:shadow-3d transition-all"
+          className="rounded cursor-pointer border border-transparent hover:border-b-violet-700 box-content hover:border-l-violet-700 hover:translate-x-[6px] hover:-translate-y-[6px] hover:shadow-3d transition-all"
           alt={data.name}
           src={data.cover}
           width={1280}

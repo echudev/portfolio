@@ -38,7 +38,7 @@ const Carousel = () => {
         href="/projects"
         className="absolute right-0 bottom-0 mr-10 translate-y-1/2 z-30 px-3 py-1  bg-violet-700 rounded shadow shadow-violet-900 hover:bg-violet-500 transition-all"
       >
-        ver más
+        proyectos
       </Link>
       <div
         aria-label="wraper"
