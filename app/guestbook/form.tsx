@@ -1,7 +1,7 @@
 "use client";
-import { FirebaseAuth } from "@/firebase/config";
+import { useEffect, useRef } from "react";
 import { signInWithGoogle, logoutFirebase } from "../../firebase/providers";
-import { useState, useEffect, useRef } from "react";
+import { useCheckFirebaseLogedUser } from "@/firebase/useCheckFirebaseLogedUser";
 import {
   GithubLoginBtn,
   GoogleLoginBtn,
@@ -10,9 +10,8 @@ import {
 } from "./buttons";
 
 function FormComponent() {
-  const [user, setUser] = useState<Object | undefined>(undefined);
-  const [loading, setLoading] = useState<boolean>(true);
   const userInput = useRef<HTMLInputElement>(null);
+  const { user, loading } = useCheckFirebaseLogedUser();
 
   const handleSendInput = () => {
     let input = userInput.current;
@@ -20,18 +19,6 @@ function FormComponent() {
   const startGoogleSignIn = async () => {
     await signInWithGoogle();
   };
-
-  useEffect(() => {
-    FirebaseAuth.onAuthStateChanged(async (firebaseUser) => {
-      try {
-        firebaseUser ? setUser(firebaseUser.providerData) : setUser(undefined);
-        setLoading(false);
-      } catch (error) {
-        setLoading(false);
-        console.log(error);
-      }
-    });
-  }, []);
 
   return (
     <div>
