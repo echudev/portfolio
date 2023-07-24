@@ -1,36 +1,33 @@
 "use client";
 import { FirebaseAuth } from "@/firebase/config";
+import { signInWithGoogle, logoutFirebase } from "../../firebase/providers";
 import { useState, useEffect, useRef } from "react";
 import {
   GithubLoginBtn,
   GoogleLoginBtn,
   ComentBtn,
-  ClearBtn,
   LogoutBtn,
 } from "./buttons";
 
 function FormComponent() {
   const [user, setUser] = useState<Object | undefined>(undefined);
+  const [loading, setLoading] = useState<boolean>(true);
   const userInput = useRef<HTMLInputElement>(null);
 
   const handleSendInput = () => {
     let input = userInput.current;
-    console.log(input?.value);
   };
-  const handleClearInput = () => {
-    if (userInput.current) {
-      userInput.current.value = "";
-    }
+  const startGoogleSignIn = async () => {
+    await signInWithGoogle();
   };
 
   useEffect(() => {
     FirebaseAuth.onAuthStateChanged(async (firebaseUser) => {
       try {
-        if (firebaseUser) {
-          setUser(firebaseUser.providerData);
-        } else {
-        }
+        firebaseUser ? setUser(firebaseUser.providerData) : setUser(undefined);
+        setLoading(false);
       } catch (error) {
+        setLoading(false);
         console.log(error);
       }
     });
@@ -38,6 +35,7 @@ function FormComponent() {
 
   return (
     <div>
+      {loading && <div>loading</div>}
       {!user ? (
         <>
           <div
@@ -47,7 +45,7 @@ function FormComponent() {
             Ingresa con
             <GithubLoginBtn />
             o
-            <GoogleLoginBtn />
+            <GoogleLoginBtn onClick={startGoogleSignIn} />
           </div>
           <p className="text-xs mx-3 my-1 text-neutral-400">
             * tus datos están protegidos por Google Firebase
@@ -55,17 +53,18 @@ function FormComponent() {
         </>
       ) : (
         <div className="p-3">
-          <input
-            className="rounded text-black px-1 w-full"
-            ref={userInput}
-            name="userMessage"
-            type="text"
-            placeholder=" tu mensaje..."
-          />
-          <div aria-label="bottons" className="flex mt-2 gap-2">
+          <div className="flex bg-neutral-200 rounded">
+            <input
+              className="rounded text-black px-1 w-full focus:outline-0 bg-transparent"
+              ref={userInput}
+              name="userMessage"
+              type="text"
+              placeholder=" hola mundo..."
+            />
             <ComentBtn onClick={handleSendInput} />
-            <ClearBtn onClick={handleClearInput} />
-            <LogoutBtn />
+          </div>
+          <div aria-label="bottons" className="flex mt-2 gap-2">
+            <LogoutBtn onClick={logoutFirebase} />
           </div>
         </div>
       )}
