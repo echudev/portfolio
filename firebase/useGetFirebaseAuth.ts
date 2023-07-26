@@ -2,13 +2,13 @@ import { useState, useEffect } from "react";
 import { FirebaseAuth } from "./config";
 import { User as FirebaseUser } from "firebase/auth";
 
-export const useGetFirebaseLogedUser = () => {
+export const useGetFirebaseAuth = () => {
   const [user, setUser] = useState<FirebaseUser | undefined>(undefined);
   const [loading, setLoading] = useState<boolean>(true);
 
   useEffect(() => {
     setLoading(true);
-    const suscribe = FirebaseAuth.onAuthStateChanged(async (firebaseUser) => {
+    const unsuscribe = FirebaseAuth.onAuthStateChanged(async (firebaseUser) => {
       try {
         firebaseUser ? setUser(firebaseUser) : setUser(undefined);
         setLoading(false);
@@ -18,7 +18,7 @@ export const useGetFirebaseLogedUser = () => {
       }
     });
 
-    return () => suscribe();
+    return () => unsuscribe();
   }, []);
 
   return { user, loading, setLoading };

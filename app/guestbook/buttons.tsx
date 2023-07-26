@@ -3,6 +3,10 @@ import { Gh4Icon, GoogleIcon } from "../components/Icons";
 interface BtnProps {
   onClick: () => void;
 }
+interface CommentBtnProps {
+  onClick: () => void;
+  loading: boolean;
+}
 
 export function GoogleLoginBtn({ onClick }: BtnProps) {
   return (
@@ -25,10 +29,11 @@ export function GithubLoginBtn() {
   );
 }
 
-export function ComentBtn({ onClick }: BtnProps) {
+export function ComentBtn({ onClick, loading }: CommentBtnProps) {
   return (
     <button
       onClick={onClick}
+      disabled={loading}
       className="bg-neutral-700 rounded m-[2px] p-1 text-white hover:bg-neutral-800 transition-all"
     >
       comentar
@@ -40,7 +45,7 @@ export function LogoutBtn({ onClick }: BtnProps) {
   return (
     <button
       onClick={onClick}
-      className="text-center text-neutral-200 m-1 font-bold hover:text-red-400 transition-all"
+      className="text-center text-neutral-300 mx-1 font-bold hover:text-red-400 transition-all"
     >
       salir
     </button>

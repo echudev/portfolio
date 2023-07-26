@@ -2,8 +2,8 @@
 import { useRef } from "react";
 import clsx from "clsx";
 import { signInWithGoogle, logoutFirebase } from "../../firebase/providers";
-import { useGetFirebaseLogedUser } from "@/firebase/useGetFirebaseLogedUser";
 import { doc, setDoc, collection } from "firebase/firestore/lite";
+import { useGetFirebaseAuth } from "@/firebase/useGetFirebaseAuth";
 import { db } from "@/firebase/config";
 import Loader from "../components/Loader";
 import {
@@ -13,8 +13,8 @@ import {
   LogoutBtn,
 } from "./buttons";
 
-function FormComponent() {
-  const { user, loading, setLoading } = useGetFirebaseLogedUser();
+function Form() {
+  const { user, loading, setLoading } = useGetFirebaseAuth();
   const userInput = useRef<HTMLInputElement>(null);
 
   const startGoogleSignIn = async () => {
@@ -64,7 +64,7 @@ function FormComponent() {
         </div>
       ) : (
         <div className="p-3">
-          <h3 className="mb-2">hola {user.displayName} 🙂</h3>
+          <h3 className="mb-2 text-neutral-300">hola {user.displayName} 🙂</h3>
           <div className="flex bg-neutral-200 rounded">
             <input
               className="rounded text-black px-1 w-full focus:outline-0 bg-transparent"
@@ -73,7 +73,7 @@ function FormComponent() {
               type="text"
               placeholder=" escribe tu mensaje ..."
             />
-            <ComentBtn onClick={setMessageFirestore} />
+            <ComentBtn onClick={setMessageFirestore} loading={loading} />
           </div>
           <div aria-label="bottons" className="flex mt-2 gap-2">
             <LogoutBtn onClick={logoutFirebase} />
@@ -85,4 +85,4 @@ function FormComponent() {
   );
 }
 
-export default FormComponent;
+export default Form;
