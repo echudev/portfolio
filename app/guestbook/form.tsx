@@ -2,7 +2,7 @@
 import { useRef } from "react";
 import clsx from "clsx";
 import { signInWithGoogle, logoutFirebase } from "../../firebase/providers";
-import { doc, setDoc, collection } from "firebase/firestore/lite";
+import { doc, setDoc, collection } from "firebase/firestore";
 import { useGetFirebaseAuth } from "@/firebase/useGetFirebaseAuth";
 import { db } from "@/firebase/config";
 import Loader from "../components/Loader";
