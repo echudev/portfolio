@@ -34,7 +34,7 @@ export function ComentBtn({ onClick, loading }: CommentBtnProps) {
     <button
       onClick={onClick}
       disabled={loading}
-      className="bg-neutral-700 rounded m-[2px] p-1 text-white hover:bg-neutral-800 transition-all"
+      className="bg-violet-700 hover:bg-violet-500 rounded m-[2px] py-1 px-2 text-neutral-200 transition-all"
     >
       comentar
     </button>
