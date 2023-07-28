@@ -3,8 +3,8 @@ import { useRef, useState } from "react";
 import clsx from "clsx";
 import { signInWithGoogle, logoutFirebase } from "../../firebase/providers";
 import { doc, setDoc, collection } from "firebase/firestore";
-import { useGetFirebaseAuth } from "@/firebase/useGetFirebaseAuth";
 import { db } from "@/firebase/config";
+import { User as FirebaseUser } from "firebase/auth";
 import Loader from "../components/Loader";
 import {
   GithubLoginBtn,
@@ -13,8 +13,13 @@ import {
   LogoutBtn,
 } from "./buttons";
 
-function Form() {
-  const { user, loading, setLoading } = useGetFirebaseAuth();
+interface FormPorps {
+  user: FirebaseUser | undefined;
+  loading: boolean;
+  setLoading: (value: boolean) => void;
+}
+
+function Form({ user, loading, setLoading }: FormPorps) {
   const [hideAlert, setHideAlert] = useState<boolean>(true);
   const userInput = useRef<HTMLInputElement>(null);
   const inputBox = useRef<HTMLDivElement>(null);
@@ -25,11 +30,10 @@ function Form() {
     setLoading(false);
   };
 
-  const setMessageFirestore = async () => {
+  const createDocFirestore = async () => {
     setLoading(true);
-    // create messaje obj
     if (user && userInput.current) {
-      // check that the message is not empty
+      // 1 - check that the message is not empty
       if (userInput.current.value.length === 0) {
         setHideAlert(false);
         if (inputBox.current) {
@@ -38,7 +42,7 @@ function Form() {
         setLoading(false);
         return;
       }
-      // create new message object
+      // 2 - create new message object
       const newMessage = {
         uid: user.uid,
         name: user.displayName,
@@ -46,10 +50,10 @@ function Form() {
         comment_text: userInput.current.value,
         parent_comment_id: "",
       };
-      // set the new message on firestore DB
+      // 3 - set the new message on firestore DB
       const newDoc = doc(collection(db, `comments/`));
       await setDoc(newDoc, newMessage);
-      // reset input
+      // 4 - reset input
       if (userInput.current) {
         userInput.current.value = "";
       }
@@ -71,7 +75,7 @@ function Form() {
   };
 
   return (
-    <div className="min-h-[100px]">
+    <div className="relative min-h-[100px]">
       {!user ? (
         <div className={clsx("", { hidden: loading })}>
           <div
@@ -103,7 +107,7 @@ function Form() {
               onFocus={handleFocus}
               onBlur={handleBlur}
             />
-            <ComentBtn onClick={setMessageFirestore} loading={loading} />
+            <ComentBtn onClick={createDocFirestore} loading={loading} />
           </div>
           <div className="flex mt-2">
             <LogoutBtn onClick={logoutFirebase} />

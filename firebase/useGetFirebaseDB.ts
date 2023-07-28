@@ -12,7 +12,10 @@ export const useGetFirestoreDB = () => {
     const unsubscribe = onSnapshot(queryCollection, (querySnapshot) => {
       const newComments: DocumentData[] = [];
       querySnapshot.forEach((doc) => {
-        newComments.push(doc.data());
+        let data = doc.data()
+        let id = doc.id
+        let newDoc = {... data, id }
+        newComments.push(newDoc);
       });
       setComments(newComments);
     });
