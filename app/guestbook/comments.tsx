@@ -2,18 +2,18 @@
 import { useGetFirestoreDB } from "@/firebase/useGetFirebaseDB";
 import { doc, deleteDoc } from "firebase/firestore";
 import { db } from "@/firebase/config";
+import Loader from "../components/Loader";
 import { User as FirebaseUser } from "firebase/auth";
 import clsx from "clsx";
 
 function Comments({ user }: { user: FirebaseUser | undefined }) {
-  const { comments } = useGetFirestoreDB();
+  const { comments, loadingDB } = useGetFirestoreDB();
 
   const deleteDocFirestore = async (docId: any) => {
     if (user) {
       try {
         const docRef = doc(db, "comments", docId);
         await deleteDoc(docRef);
-        console.log("archivo eliminado");
       } catch (error) {
         console.log(error);
       }
@@ -21,7 +21,7 @@ function Comments({ user }: { user: FirebaseUser | undefined }) {
   };
 
   return (
-    <article className="p-3 max-w-2xl mx-auto">
+    <article className="relative p-3 max-w-2xl mx-auto">
       <ul>
         {comments &&
           comments.map((obj, i) => (
@@ -42,6 +42,7 @@ function Comments({ user }: { user: FirebaseUser | undefined }) {
             </li>
           ))}
       </ul>
+      <Loader hide={loadingDB} />
     </article>
   );
 }

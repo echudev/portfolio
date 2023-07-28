@@ -3,7 +3,7 @@ import { useGetFirebaseAuth } from "@/firebase/useGetFirebaseAuth";
 import Comments from "./comments";
 import Form from "./form";
 
-function GuestBookPage() {
+function GuestbookPage() {
   const { user, loading, setLoading } = useGetFirebaseAuth();
 
   return (
@@ -15,4 +15,4 @@ function GuestBookPage() {
   );
 }
 
-export default GuestBookPage;
+export default GuestbookPage;

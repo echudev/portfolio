@@ -4,8 +4,10 @@ import { db } from "./config";
 
 export const useGetFirestoreDB = () => {
   const [comments, setComments] = useState<DocumentData[]>([]);
+  const [loadingDB, setLoadingDB] = useState<boolean>(false)
 
   useEffect(() => {
+    setLoadingDB(true)
     const collectionRef = collection(db, "comments/");
     const queryCollection = query(collectionRef, orderBy("date", "desc"));
 
@@ -18,6 +20,7 @@ export const useGetFirestoreDB = () => {
         newComments.push(newDoc);
       });
       setComments(newComments);
+      setLoadingDB(false)
     });
 
     return () => {
@@ -25,5 +28,5 @@ export const useGetFirestoreDB = () => {
     };
   }, []);
 
-  return { comments };
+  return { comments, loadingDB, setLoadingDB };
 };
