@@ -17,6 +17,7 @@ function Form() {
   const { user, loading, setLoading } = useGetFirebaseAuth();
   const [hideAlert, setHideAlert] = useState<boolean>(true);
   const userInput = useRef<HTMLInputElement>(null);
+  const inputBox = useRef<HTMLDivElement>(null);
 
   const startGoogleSignIn = async () => {
     setLoading(true);
@@ -31,7 +32,9 @@ function Form() {
       // check that the message is not empty
       if (userInput.current.value.length === 0) {
         setHideAlert(false);
-        userInput.current.style.border = "2px solid red";
+        if (inputBox.current) {
+          inputBox.current.style.outlineColor = "red";
+        }
         setLoading(false);
         return;
       }
@@ -54,15 +57,21 @@ function Form() {
     }
   };
 
-  const hideAlertOnFocus = () => {
-    if (userInput.current) {
+  const handleFocus = () => {
+    if (inputBox.current) {
       setHideAlert(true);
-      userInput.current.style.border = "";
+      inputBox.current.style.outlineColor = "#8d5efa";
+    }
+  };
+  const handleBlur = () => {
+    if (inputBox.current) {
+      setHideAlert(true);
+      inputBox.current.style.outlineColor = "";
     }
   };
 
   return (
-    <div className="relative min-h-[100px]">
+    <div className="min-h-[100px]">
       {!user ? (
         <div className={clsx("", { hidden: loading })}>
           <div
@@ -81,14 +90,18 @@ function Form() {
       ) : (
         <div className="p-3">
           <h3 className="mb-2 text-neutral-300">hola {user.displayName} 🙂</h3>
-          <div className="flex bg-neutral-200 rounded">
+          <div
+            ref={inputBox}
+            className="flex bg-neutral-200 outline outline-transparent rounded"
+          >
             <input
               className="rounded text-black px-1 w-full focus:outline-0 bg-transparent"
               ref={userInput}
               name="userMessage"
               type="text"
               placeholder=" escribe tu mensaje ..."
-              onFocus={hideAlertOnFocus}
+              onFocus={handleFocus}
+              onBlur={handleBlur}
             />
             <ComentBtn onClick={setMessageFirestore} loading={loading} />
           </div>
