@@ -1,15 +1,18 @@
 "use client";
-import { useGetFirestoreDB } from "@/firebase/useGetFirebaseDB";
-import { doc, deleteDoc } from "firebase/firestore";
+import { doc, deleteDoc, DocumentData } from "firebase/firestore";
+import { User as FirebaseUser } from "firebase/auth";
 import { db } from "@/firebase/config";
 import Loader from "../components/Loader";
-import { User as FirebaseUser } from "firebase/auth";
 import clsx from "clsx";
 
-function Comments({ user }: { user: FirebaseUser | undefined }) {
-  const { comments, loadingDB } = useGetFirestoreDB();
+interface CommentsProps {
+  user: FirebaseUser | undefined;
+  comments: DocumentData[];
+  loadingDB: boolean;
+}
 
-  const deleteDocFirestore = async (docId: any) => {
+function Comments({ user, comments, loadingDB }: CommentsProps) {
+  const deleteDocFirestore = async (docId: string) => {
     if (user) {
       try {
         const docRef = doc(db, "comments", docId);
@@ -24,16 +27,16 @@ function Comments({ user }: { user: FirebaseUser | undefined }) {
     <article className="relative p-3 max-w-2xl mx-auto">
       <ul>
         {comments &&
-          comments.map((obj, i) => (
+          comments.map((doc, i) => (
             <li key={i} className="flex gap-3 my-3">
-              <h3 className="text-neutral-400">{obj.name}</h3>
-              <p className="text-neutral-200">{obj.comment_text}</p>
+              <h3 className="text-neutral-400">{doc.name}</h3>
+              <p className="text-neutral-200">{doc.comment_text}</p>
               <div
-                onClick={() => deleteDocFirestore(obj.id)}
+                onClick={() => deleteDocFirestore(doc.id)}
                 className={clsx(
                   "ml-auto cursor-pointer text-neutral-400 select-none",
                   {
-                    hidden: user?.uid !== obj.uid,
+                    hidden: user?.uid !== doc.uid,
                   }
                 )}
               >
