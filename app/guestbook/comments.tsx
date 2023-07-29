@@ -1,9 +1,7 @@
-"use client";
-import { doc, deleteDoc, DocumentData } from "firebase/firestore";
+import { DocumentData } from "firebase/firestore";
 import { User as FirebaseUser } from "firebase/auth";
-import { db } from "@/firebase/config";
-import Loader from "../components/Loader";
-import clsx from "clsx";
+import Loader from "./Loader";
+import Menu from "./menu";
 
 interface CommentsProps {
   user: FirebaseUser | undefined;
@@ -12,36 +10,15 @@ interface CommentsProps {
 }
 
 function Comments({ user, comments, loadingDB }: CommentsProps) {
-  const deleteDocFirestore = async (docId: string) => {
-    if (user) {
-      try {
-        const docRef = doc(db, "comments", docId);
-        await deleteDoc(docRef);
-      } catch (error) {
-        console.log(error);
-      }
-    }
-  };
-
   return (
-    <article className="relative p-3 max-w-2xl mx-auto">
+    <article className="relative p-3 max-w-2xl mx-auto z-40">
       <ul>
         {comments &&
           comments.map((doc, i) => (
-            <li key={i} className="flex gap-3 my-3">
+            <li key={i} className="flex gap-3 my-3 py-1">
               <h3 className="text-neutral-400">{doc.name}</h3>
               <p className="text-neutral-200">{doc.comment_text}</p>
-              <div
-                onClick={() => deleteDocFirestore(doc.id)}
-                className={clsx(
-                  "ml-auto cursor-pointer text-neutral-400 select-none",
-                  {
-                    hidden: user?.uid !== doc.uid,
-                  }
-                )}
-              >
-                x
-              </div>
+              <Menu user={user} docu={doc} />
             </li>
           ))}
       </ul>

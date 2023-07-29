@@ -5,7 +5,7 @@ import { signInWithGoogle, logoutFirebase } from "../../firebase/providers";
 import { doc, setDoc, collection } from "firebase/firestore";
 import { db } from "@/firebase/config";
 import { User as FirebaseUser } from "firebase/auth";
-import Loader from "../components/Loader";
+import Loader from "./Loader";
 import {
   GithubLoginBtn,
   GoogleLoginBtn,

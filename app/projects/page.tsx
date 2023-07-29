@@ -1,5 +1,5 @@
 import GetProjects from "@/lib/getProjects";
-import Card from "@/app/components/Card";
+import Card from "./Card";
 
 async function ProjectsPage() {
   const { projectsCollection } = await GetProjects();
