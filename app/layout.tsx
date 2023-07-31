@@ -33,7 +33,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="es" className={`${ubuntu.variable}`}>
-      <GoogleAnalytics ga_id={"G-Q4S5CRL8PL"} />
+      <GoogleAnalytics gtm_id={"GTM-NR9JSP69"} />
       <body className="antialiased font-ubuntu text-neutral-300 h-screen max-w-2xl mx-auto flex flex-col items-center backdrop-blur-xl bg-opacity-20 border border-neutral-800 bg-neutral-900 shadow-xl shadow-black rounded-xl selection:bg-orange-800">
         <Navigation />
         <Suspense fallback={<Loader />}>
