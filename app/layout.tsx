@@ -3,7 +3,7 @@ import Navigation from "./components/Navigation";
 import localFont from "next/font/local";
 import { Suspense } from "react";
 import Loader from "./loading";
-import GoogleAnalytics from "../lib/GoogleAnalytics";
+import Analytics from "./components/Analytics";
 
 const ubuntu = localFont({
   src: [
@@ -33,8 +33,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="es" className={`${ubuntu.variable}`}>
-      <GoogleAnalytics gtm_id={"GTM-NR9JSP69"} />
       <body className="antialiased font-ubuntu text-neutral-300 h-screen max-w-2xl mx-auto flex flex-col items-center backdrop-blur-xl bg-opacity-20 border border-neutral-800 bg-neutral-900 shadow-xl shadow-black rounded-xl selection:bg-orange-800">
+        <Suspense>
+          <Analytics />
+        </Suspense>
         <Navigation />
         <Suspense fallback={<Loader />}>
           <main className="w-full overflow-y-auto">{children}</main>
