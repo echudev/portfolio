@@ -1,7 +1,11 @@
 "use client";
 import { useRef, useState } from "react";
 import clsx from "clsx";
-import { signInWithGoogle, logoutFirebase } from "../../firebase/providers";
+import {
+  signInWithGoogle,
+  signInWithGithub,
+  logoutFirebase,
+} from "../../firebase/providers";
 import { doc, setDoc, collection } from "firebase/firestore";
 import { db } from "@/firebase/config";
 import { User as FirebaseUser } from "firebase/auth";
@@ -27,6 +31,12 @@ function Form({ user, loading, setLoading }: FormPorps) {
   const startGoogleSignIn = async () => {
     setLoading(true);
     await signInWithGoogle();
+    setLoading(false);
+  };
+
+  const startGithubSignIn = async () => {
+    setLoading(true);
+    await signInWithGithub();
     setLoading(false);
   };
 
@@ -83,7 +93,7 @@ function Form({ user, loading, setLoading }: FormPorps) {
             className="flex gap-3 items-center px-3 py-1"
           >
             Ingresa con
-            <GithubLoginBtn />
+            <GithubLoginBtn onClick={startGithubSignIn} />
             o
             <GoogleLoginBtn onClick={startGoogleSignIn} />
           </div>

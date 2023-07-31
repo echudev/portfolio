@@ -20,9 +20,12 @@ export function GoogleLoginBtn({ onClick }: BtnProps) {
   );
 }
 
-export function GithubLoginBtn() {
+export function GithubLoginBtn({ onClick }: BtnProps) {
   return (
-    <button className="group flex gap-2 border rounded-sm py-1 px-2 items-center border-neutral-700 hover:border-neutral-400 bg-neutral-700 bg-opacity-60 text-neutral-200 hover:bg-neutral-800 active:scale-95 transition-all">
+    <button
+      onClick={onClick}
+      className="group flex gap-2 border rounded-sm py-1 px-2 items-center border-neutral-700 hover:border-neutral-400 bg-neutral-700 bg-opacity-60 text-neutral-200 hover:bg-neutral-800 active:scale-95 transition-all"
+    >
       <Gh4Icon />
       Github
     </button>
