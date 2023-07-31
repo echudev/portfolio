@@ -3,6 +3,7 @@ import Navigation from "./components/Navigation";
 import localFont from "next/font/local";
 import { Suspense } from "react";
 import Loader from "./loading";
+import Script from "next/script";
 
 const ubuntu = localFont({
   src: [
@@ -38,6 +39,18 @@ export default function RootLayout({
           <main className="w-full overflow-y-auto">{children}</main>
         </Suspense>
       </body>
+      <Script
+        strategy="afterInteractive"
+        src="https://www.googletagmanager.com/gtag/js?id=G-HGVF7CT1ZP"
+      />
+      <Script strategy="afterInteractive" id="google-analytics">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-HGVF7CT1ZP');
+        `}
+      </Script>
     </html>
   );
 }
