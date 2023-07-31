@@ -33,10 +33,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="es" className={`${ubuntu.variable}`}>
-      <body className="antialiased font-ubuntu text-neutral-300 h-screen max-w-2xl mx-auto flex flex-col items-center backdrop-blur-xl bg-opacity-20 border border-neutral-800 bg-neutral-900 shadow-xl shadow-black rounded-xl selection:bg-orange-800">
+      <head>
         {process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS ? (
           <GoogleAnalytics ga_id={process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS} />
         ) : null}
+      </head>
+      <body className="antialiased font-ubuntu text-neutral-300 h-screen max-w-2xl mx-auto flex flex-col items-center backdrop-blur-xl bg-opacity-20 border border-neutral-800 bg-neutral-900 shadow-xl shadow-black rounded-xl selection:bg-orange-800">
         <Navigation />
         <Suspense fallback={<Loader />}>
           <main className="w-full overflow-y-auto">{children}</main>
