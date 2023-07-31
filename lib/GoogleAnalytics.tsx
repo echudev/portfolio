@@ -1,6 +1,7 @@
+"use client";
 import Script from "next/script";
 
-const GoogleAnalytics = ({ ga_id }: { ga_id: string }) => (
+const GoogleAnalytics = ({ ga_id }: { ga_id: string | undefined }) => (
   <>
     <Script
       async
