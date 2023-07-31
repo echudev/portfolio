@@ -3,7 +3,7 @@ import Navigation from "./components/Navigation";
 import localFont from "next/font/local";
 import { Suspense } from "react";
 import Loader from "./loading";
-import Script from "next/script";
+import GoogleAnalytics from "../lib/GoogleAnalytics";
 
 const ubuntu = localFont({
   src: [
@@ -34,23 +34,14 @@ export default function RootLayout({
   return (
     <html lang="es" className={`${ubuntu.variable}`}>
       <body className="antialiased font-ubuntu text-neutral-300 h-screen max-w-2xl mx-auto flex flex-col items-center backdrop-blur-xl bg-opacity-20 border border-neutral-800 bg-neutral-900 shadow-xl shadow-black rounded-xl selection:bg-orange-800">
+        {process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS ? (
+          <GoogleAnalytics ga_id={process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS} />
+        ) : null}
         <Navigation />
         <Suspense fallback={<Loader />}>
           <main className="w-full overflow-y-auto">{children}</main>
         </Suspense>
       </body>
-      <Script
-        strategy="afterInteractive"
-        src="https://www.googletagmanager.com/gtag/js?id=G-HGVF7CT1ZP"
-      />
-      <Script strategy="afterInteractive" id="google-analytics">
-        {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-HGVF7CT1ZP');
-        `}
-      </Script>
     </html>
   );
 }
