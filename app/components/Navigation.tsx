@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import { TwIcon, Gh2Icon, DsIcon } from "./Icons";
+import { TwIcon, Gh2Icon, MailIcon } from "./Icons";
 import { usePathname } from "next/navigation";
 import { LayoutGroup, motion } from "framer-motion";
 import clsx from "clsx";
@@ -75,11 +75,8 @@ const Navigation = () => {
             <Link href="https://github.com/echudev" target="_blank">
               <Gh2Icon />
             </Link>
-            <Link
-              href="https://discordapp.com/users/ezestebanm"
-              target="_blank"
-            >
-              <DsIcon />
+            <Link href="mailto:ez.devrel@gmail.com" target="_blank">
+              <MailIcon />
             </Link>
           </div>
         </div>
