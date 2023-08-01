@@ -16,7 +16,7 @@ function Comments({ user, comments, loadingDB }: CommentsProps) {
         {comments &&
           comments.map((doc, i) => (
             <li key={i} className="flex gap-3 my-3 py-1">
-              <h3 className="text-neutral-400">{doc.name}</h3>
+              <h3 className="text-neutral-400">{doc.name}:</h3>
               <p className="text-neutral-200">{doc.comment_text}</p>
               <Menu user={user} docu={doc} />
             </li>
