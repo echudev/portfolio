@@ -5,7 +5,7 @@ function Loader({ hide }: { hide: boolean }) {
     <div
       aria-label="loader"
       className={clsx(
-        "absolute z-50 grid place-items-center left-0 top-0 w-[300px] h-full",
+        "absolute z-50 grid place-items-center left-0 top-0 w-full h-full",
         { hidden: !hide }
       )}
     >

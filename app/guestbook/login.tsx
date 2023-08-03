@@ -1,6 +1,5 @@
 import { Gh4Icon, GoogleIcon } from "../components/Icons";
 import Loader from "./Loader";
-import clsx from "clsx";
 import {
   signInWithGithub,
   signInWithGoogle,
@@ -23,8 +22,9 @@ export const Login = () => {
   };
 
   return (
-    <article className="relative min-h-[70px]">
-      <div className={clsx("", { hidden: loading })}>
+    <article className="relative min-h-[70px] w-fit">
+      <Loader hide={loading} />
+      <div className={loading ? "z-30 blur-sm" : ""}>
         <div
           aria-label="login buttons"
           className="flex gap-3 items-center px-3 py-1"
@@ -50,7 +50,6 @@ export const Login = () => {
           * tus datos están protegidos por Google Firebase
         </p>
       </div>
-      <Loader hide={loading} />
     </article>
   );
 };
