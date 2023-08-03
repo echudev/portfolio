@@ -1,11 +1,22 @@
 import clsx from "clsx";
 
-function Loader({ hide }: { hide: boolean }) {
+interface Props {
+  hide: boolean;
+  width?: Widths;
+}
+
+export enum Widths {
+  full = "w-full",
+  small = "w-[120px]",
+  medium = "w-[300px]",
+  large = "w-[500px]",
+}
+function Loader({ hide, width = Widths.full }: Props) {
   return (
     <div
       aria-label="loader"
       className={clsx(
-        "absolute z-50 grid place-items-center left-0 top-0 w-full h-full",
+        `absolute z-50 grid place-items-center inset-0 h-full ${width}`,
         { hidden: !hide }
       )}
     >

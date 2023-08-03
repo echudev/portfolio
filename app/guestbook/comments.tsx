@@ -1,6 +1,6 @@
 import { useGetComments } from "@/firebase/useGetComments";
 import { User as FirebaseUser } from "firebase/auth";
-import Loader from "./Loader";
+import Loader, { Widths } from "./Loader";
 import CommentMenu from "./commentMenu";
 
 interface CommentsProps {
@@ -22,7 +22,7 @@ function Comments({ user }: CommentsProps) {
             </li>
           ))}
       </ul>
-      <Loader hide={loadingDB} />
+      <Loader hide={loadingDB} width={Widths.medium} />
     </article>
   );
 }
