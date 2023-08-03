@@ -11,7 +11,7 @@ interface DotsMenuProps {
   docu: DocumentData;
 }
 
-function Menu({ user, docu }: DotsMenuProps) {
+function CommentMenu({ user, docu }: DotsMenuProps) {
   const [openPopup, setOpenPopup] = useState<boolean>(false);
   const [docId, setDocId] = useState<string>("");
   const deleteDocFirestore = async () => {
@@ -66,4 +66,4 @@ function Menu({ user, docu }: DotsMenuProps) {
   );
 }
 
-export default Menu;
+export default CommentMenu;

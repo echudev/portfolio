@@ -2,7 +2,7 @@ import { collection, query, onSnapshot, orderBy, DocumentData } from "firebase/f
 import { useState, useEffect, useMemo } from "react";
 import { db } from "./config";
 
-export const useGetFirestoreDB = () => {
+export const useGetComments = () => {
   const [comments, setComments] = useState<DocumentData[]>([]);
   const [loadingDB, setLoadingDB] = useState<boolean>(true)
 
