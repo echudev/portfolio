@@ -41,7 +41,11 @@ const Card = ({ data }: CardProps) => {
         />
       </Link>
       <div className="flex items-start m-1 cursor-pointer">
-        <p className="font-bold">{data.name}</p>
+        <Link href={data.link.app} target="_blank">
+          <p className="font-bold hover:text-violet-500 transition-all">
+            {data.name}
+          </p>
+        </Link>
       </div>
       <p className="text-sm text-neutral-400 m-1">{data.description}</p>
 
