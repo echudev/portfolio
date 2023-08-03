@@ -5,7 +5,7 @@ import {
   signInWithGoogle,
   signInWithGithub,
   logoutFirebase,
-} from "../../firebase/providers";
+} from "../../firebase/auth/providers";
 import { doc, setDoc, collection } from "firebase/firestore";
 import { db } from "@/firebase/config";
 import { User as FirebaseUser } from "firebase/auth";

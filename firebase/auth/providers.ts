@@ -1,5 +1,5 @@
 import { GoogleAuthProvider, GithubAuthProvider, signInWithPopup, signOut } from 'firebase/auth'
-import { FirebaseAuth } from './config'
+import { FirebaseAuth } from '../config'
 
 const googleProvider = new GoogleAuthProvider()
 googleProvider.setCustomParameters({ prompt: 'select_account' })

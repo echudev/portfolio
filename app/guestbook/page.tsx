@@ -1,6 +1,6 @@
 "use client";
-import { useGetFirebaseAuth } from "@/firebase/useGetFirebaseAuth";
-import { useGetFirestoreDB } from "@/firebase/useGetFirebaseDB";
+import { useGetFirebaseAuth } from "@/firebase/auth/useGetUser";
+import { useGetFirestoreDB } from "@/firebase/useGetComments";
 import Comments from "./comments";
 import Form from "./form";
 
