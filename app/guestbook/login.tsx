@@ -23,7 +23,7 @@ export const Login = () => {
 
   return (
     <article className="relative min-h-[70px] w-fit">
-      <Loader hide={loading} />
+      <Loader hide={!loading} />
       <div className={loading ? "z-30 blur-sm" : ""}>
         <div
           aria-label="login buttons"

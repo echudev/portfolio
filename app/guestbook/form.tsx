@@ -23,7 +23,7 @@ function Form({ user }: FormPorps) {
 
   return (
     <article className="relative min-h-[125px]">
-      <Loader hide={loading} />
+      <Loader hide={!loading} />
       <div className={loading ? "z-30 blur-sm" : ""}>
         <div className="p-3">
           <h3 className="mb-2 text-neutral-300">hola {user?.displayName} 🙂</h3>

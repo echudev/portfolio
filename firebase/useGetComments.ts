@@ -1,11 +1,12 @@
 import { collection, query, onSnapshot, orderBy, DocumentData } from "firebase/firestore";
-import { useState, useEffect, useMemo } from "react";
+import { useState, useEffect } from "react";
 import { db } from "./config";
 
 export const useGetComments = () => {
   const [comments, setComments] = useState<DocumentData[]>([]);
-  const [loadingDB, setLoadingDB] = useState<boolean>(true)
 
+
+  useEffect(() => {
   const collectionRef = query(collection(db, "comments/"), orderBy("date", "desc"));
 
     const unsubscribe = onSnapshot(collectionRef, snap => {
@@ -19,15 +20,12 @@ export const useGetComments = () => {
       });
 
       setComments(newComments);
-      setLoadingDB(false)
     });
 
-  useEffect(() => {
-    unsubscribe
     return () => {
       unsubscribe();
     };
-  }, [unsubscribe]);
+  }, []);
 
-  return { comments, loadingDB, setLoadingDB };
+  return { comments };
 };
