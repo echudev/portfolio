@@ -2,6 +2,7 @@ import "./globals.css";
 import Navigation from "./components/Navigation";
 import localFont from "next/font/local";
 import { Suspense } from "react";
+import Loader from "./loading";
 import Analytics from "./components/Analytics";
 
 const ubuntu = localFont({
@@ -37,7 +38,9 @@ export default function RootLayout({
           <Analytics />
         </Suspense>
         <Navigation />
-        <main className="w-full overflow-y-auto">{children}</main>
+        <Suspense fallback={<Loader />}>
+          <main className="w-full overflow-y-auto">{children}</main>
+        </Suspense>
       </body>
     </html>
   );
