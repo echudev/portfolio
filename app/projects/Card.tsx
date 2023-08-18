@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import clsx from "clsx";
 import { ProjectData } from "@/lib/getProjects";
 import { Gh3Icon } from "../components/Icons";
 
@@ -56,7 +57,13 @@ const Card = ({ data }: CardProps) => {
         {data.tags.map((skill, i) => (
           <div key={i} className="group relative">
             <Image
-              className="grayscale cursor-pointer hover:grayscale-0 transition-all"
+              className={clsx(
+                "grayscale cursor-pointer hover:grayscale-0 transition-all",
+                {
+                  "brightness-100 hover:brightness-[35%]":
+                    skill.name === "Next.js",
+                }
+              )}
               alt={skill.name}
               src={skill.img}
               width={25}
