@@ -1,7 +1,7 @@
 [
   {
     "id": "01",
-    "cover": "https://res.cloudinary.com/ddeveuwdl/image/upload/v1692166729/portfolio/ebookstore/cover-ebookstore_c2eheo.jpg",
+    "cover": "https://res.cloudinary.com/ddeveuwdl/image/upload/v1693070459/portfolio/ebookstore/cover-ebookstore-light_n25xgx.jpg",
     "link": {
       "app": "https://ebookstore-ten.vercel.app/",
       "repo": "https://github.com/echudev/eBookstore"
