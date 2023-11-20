@@ -75,7 +75,7 @@ const Navigation = () => {
             <Link href="https://github.com/echudev" target="_blank">
               <Gh2Icon />
             </Link>
-            <Link href="mailto:ez.devrel@gmail.com" target="_blank">
+            <Link href="mailto:ezequiel.maranda@gmail.com" target="_blank">
               <MailIcon />
             </Link>
           </div>
