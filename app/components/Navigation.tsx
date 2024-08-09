@@ -42,7 +42,7 @@ const Navigation = () => {
                 href={link.href}
                 className={clsx(
                   "font-bold relative text-center inline-block z-10 px-2 leading-10 hover:text-violet-500 transition-all",
-                  { "text-white": isActive }
+                  { "text-white": isActive },
                 )}
               >
                 {link.name}
@@ -69,13 +69,13 @@ const Navigation = () => {
             aria-label="contacto"
             className="flex items-end mb-[10px] mr-5 gap-3 cursor-pointer"
           >
-            <Link href="https://twitter.com/echudev" target="_blank">
+            <Link href="https://twitter.com/ezestebanar" target="_blank">
               <TwIcon />
             </Link>
             <Link href="https://github.com/echudev" target="_blank">
               <Gh2Icon />
             </Link>
-            <Link href="mailto:ezequiel.maranda@gmail.com" target="_blank">
+            <Link href="mailto:emaranda@proton.me" target="_blank">
               <MailIcon />
             </Link>
           </div>
